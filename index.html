@@ -1,0 +1,281 @@
+<!doctype html>
+
+<html lang="en-JM">
+  <!----====================================================================
+                            HEAD & METADATA 
+  =======================================================================-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Daniel Leith" />
+    <meta name="owner" content="Yoshika Leith-Carty, Dushaine Carty" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure Zen Essence | Beauty By Nature</title>
+    <link
+      rel="icon"
+      href="./images/pure-zen-essence-icon.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Custom JavaScript -->
+    <script src="./dist/javascript/main.js" defer></script>
+  </head>
+
+  <body>
+    <!--=====================================================================
+                                NAVBAR 
+    ======================================================================-->
+    <nav
+      class="fixed left-0 right-0 top-0 z-10 flex select-none items-center justify-between bg-brand-blue-dark px-8 py-4 text-white"
+    >
+      <div class="flex">
+        <a class="mr-12 flex items-center" href="#">
+          <img
+            class="mr-4 w-8 animate-bounce"
+            src="./images/pure-zen-essence-icon.png"
+            alt="Pure Zen Essence Logo"
+          />
+          <span class="mt-1 w-fit text-lg font-bold">PURE ZEN ESSENCE</span>
+        </a>
+        <ul class="hidden items-center justify-between gap-8 lg:flex">
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#products-section">Products</a></li>
+          <li><a href="#testimonials-section">Testimonials</a></li>
+          <li><a href="#faq-section">FAQs</a></li>
+          <li><a href="#contact-us-section">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center justify-center">
+        <a
+          class="mr-4 hidden font-bold underline-offset-4 transition-all hover:underline lg:inline-block"
+          href="#"
+          >Login</a
+        >
+        <div class="btn hidden bg-brand-green sm:inline-block" role="button">
+          <span class="flex items-center">
+            Sign up
+            <i class="fa-regular fa-user ml-2 aspect-square text-2xl"></i>
+          </span>
+        </div>
+        <div
+          class="flex aspect-square h-10 items-center justify-center rounded-full bg-brand-green p-2 sm:hidden"
+          role="button"
+        >
+          <i class="fa-regular fa-user text-2xl"></i>
+        </div>
+      </div>
+    </nav>
+    <!---====================================================================
+                                BANNER 
+    =====================================================================--->
+    <header
+      class="main-banner mt-[4.6rem] flex h-screen flex-col items-center justify-center bg-cover bg-bottom px-8 pb-8 text-white md:bg-top lg:px-16"
+      role="banner"
+    >
+      <div id="cta-container" class="flex flex-col items-center">
+        <h1 class="text-center text-5xl font-bold capitalize lg:text-8xl">
+          The best offer on the market for your business
+        </h1>
+        <a
+          class="btn mt-12 flex items-center bg-brand-blue-dark px-8 py-4 font-semibold lg:text-lg"
+          href="#about-section"
+          role="button"
+        >
+          Learn More
+          <i class="fa-regular fa-circle-down ml-2 text-lg"></i>
+        </a>
+      </div>
+    </header>
+    <!--=====================================================================
+                              MAIN CONTENT 
+    ======================================================================-->
+    <main>
+      <!---------------------------------------------------------------------
+      |       ABOUT US SECTION                                              |
+      ----------------------------------------------------------------------->
+      <section id="about-section" aria-labelledby="about-header">
+        <header>
+          <h2 id="about-header">About Us</h2>
+        </header>
+      </section>
+      <!---------------------------------------------------------------------
+      |       PRODUCTS SECTION                                              |
+      ----------------------------------------------------------------------->
+      <section id="products-section" aria-labelledby="products-header">
+        <header>
+          <h2 id="products-header">Our Products</h2>
+        </header>
+        <!-----------------------------------------------------------------------
+        |       |       Oil Products                                                    |
+        ------------------------------------------------------------------------->
+        <article>
+          <h3 class="">Oils</h3>
+          <div class="products-grid">
+            <div class="product bg-[url('../images/2oz-coconut-oil.jpg')]">
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+            <div
+              class="product bg-[url('../images/1oz-castor-coconut-oil.jpg')]"
+            >
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+            <div class="product bg-[url('../images/beard-oil.jpg')]">
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+            <div
+              class="product bg-[url('../images/cold-pressed-castor-oil.jpg')]"
+            >
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-----------------------------------------------------------------------
+        |       |       Soap Products                                                   |
+        ------------------------------------------------------------------------->
+        <article>
+          <header>
+            <h3 id="soap-products-header">Soaps</h3>
+          </header>
+          <div class="products-grid">
+            <div
+              class="product bg-[url('../images/neem-and-mint-bar-soap.jpg')]"
+            >
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+            <div class="product bg-[url('../images/charcoal-bar-soap.jpg')]">
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+            <div
+              class="product bg-[url('../images/tumeric-kojic-bar-soap.jpg')]"
+            >
+              <button class="product-btn">
+                Learn More <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!---------------------------------------------------------------------
+      |       TESTIMONIALS SECTION                                          |
+      ----------------------------------------------------------------------->
+      <section id="testimonials-section" aria-labelledby="testimonials-header">
+        <header>
+          <h2 id="testimonials-header">Testimonials</h2>
+        </header>
+      </section>
+      <!---------------------------------------------------------------------
+      |       FAQs SECTION                                                  |
+      ----------------------------------------------------------------------->
+      <section id="faq-section" aria-labelledby="faq-header">
+        <header>
+          <h2 id="faq-header">FAQs</h2>
+        </header>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <details class="faq-detail" name="faq">
+            <summary class="faq-summary">This is a question?</summary>
+            This is the answer to the question
+          </details>
+          <details class="faq-detail" name="faq">
+            <summary class="faq-summary">This is another question?</summary>
+            This is the answer to the question
+          </details>
+          <details class="w-full bg-red-600" name="faq">
+            <summary class="faq-summary">This is the third question?</summary>
+            This is the answer to the question
+          </details>
+          <details class="w-full bg-red-600" name="faq">
+            <summary class="faq-summary">This is the final question?</summary>
+            This is the answer to the question
+          </details>
+        </div>
+      </section>
+      <!---------------------------------------------------------------------
+      |       CONTACT US SECTION                                                  |
+      ----------------------------------------------------------------------->
+      <section id="contact-us-section" aria-labelledby="contact-us-header">
+        <header>
+          <h2 id="contact-us-header">Contact Us</h2>
+        </header>
+        <form
+          action="https://formsubmit.co/danielleith3@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="John Doe" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="johndoe@example.com"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <!--=====================================================================
+                                FOOTER 
+    ======================================================================-->
+    <footer class="bg-brand-blue-dark pt-4 text-white">
+      <ul class="mx-4 mb-4 flex justify-center gap-4 text-3xl">
+        <li>
+          <a href="https://instagram.com/purezenessence" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://tiktok.com/purezenessence" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="py-2 text-center text-sm text-white">
+        Copyright &copy; All Rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

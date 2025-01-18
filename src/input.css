@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      @apply scroll-smooth;
+    }
+  }
+
+  html {
+    font-family: Roboto, sans-serif;
+  }
+
+  body {
+    @apply bg-gray-300;
+  }
+
+  section {
+    @apply scroll-mt-20 p-8 lg:px-16;
+
+    /* * {
+      outline: 2px solid lime;
+    } */
+  }
+
+  a {
+    @apply inline-block;
+  }
+
+  h2 {
+    @apply mb-4 text-center text-5xl font-bold;
+  }
+}
+
+@layer components {
+  .main-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url("../dist/images/site-banner.jpg");
+  }
+
+  .btn {
+    @apply rounded-md px-4 py-2;
+  }
+
+  .products-grid {
+    @apply grid grid-cols-1 gap-8 text-white sm:grid-cols-2 md:grid-cols-3;
+  }
+
+  .product {
+    @apply flex aspect-square w-full cursor-pointer items-end rounded-bl-md rounded-br-[4rem] rounded-tl-[4rem] rounded-tr-md bg-opacity-25 bg-cover bg-center bg-blend-multiply shadow-lg transition-all;
+  }
+
+  .product-btn {
+    @apply btn bg-brand-green-dark transition-all hover:bg-red-600 hover:pr-8 hover:pt-4;
+  }
+
+  .faq-detail {
+    @apply w-full bg-red-600;
+  }
+
+  .faq-summary {
+    @apply bg-slate-600 p-4;
+  }
+}

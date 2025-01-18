@@ -1,0 +1,2 @@
+TODO: Add robots.txt behavior here
+TODO: Validate site using the extension
