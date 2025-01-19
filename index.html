@@ -66,12 +66,20 @@
           />
           <span class="mt-1 w-fit text-lg font-bold">PURE ZEN ESSENCE</span>
         </a>
-        <ul class="hidden items-center justify-between gap-8 lg:flex">
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#products-section">Products</a></li>
-          <li><a href="#testimonials-section">Testimonials</a></li>
-          <li><a href="#faq-section">FAQs</a></li>
-          <li><a href="#contact-us-section">Contact Us</a></li>
+        <ul class="section-nav hidden items-center justify-between lg:flex">
+          <li>
+            <a class="rounded-l-lg rounded-r-sm" href="#about-section">About</a>
+          </li>
+          <li><a class="rounded-sm" href="#products-section">Products</a></li>
+          <li>
+            <a class="rounded-sm" href="#testimonials-section">Testimonials</a>
+          </li>
+          <li><a class="rounded-sm" href="#faq-section">FAQs</a></li>
+          <li>
+            <a class="rounded-l-sm rounded-r-lg" href="#contact-us-section"
+              >Contact Us</a
+            >
+          </li>
         </ul>
       </div>
       <div class="flex items-center justify-center">
@@ -102,21 +110,24 @@
       role="banner"
     >
       <div id="cta-container" class="flex flex-col items-center">
-        <h1 class="text-center text-5xl font-bold capitalize lg:text-6xl">
-          The best offer on the market for your business
+        <h1 class="text-center text-4xl font-extrabold capitalize lg:text-6xl">
+          THE BEST OFFER ON THE MARKET FOR YOUR BUSINESS
         </h1>
-        <p class="mt-8 text-center md:text-xl lg:text-2xl">
+        <p class="my-8 text-center font-semibold md:text-xl lg:text-2xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          dolorem earum maiores tenetur, dignissimos libero recusandae delectus
-          reprehenderit laboriosam, nesciunt quos?
+          dolorem earum maiores tenetur.
+        </p>
+        <p class="font-light md:text-xl">
+          Dignissimos libero recusandae delectus reprehenderit laboriosam,
+          nesciunt quos?
         </p>
         <a
-          class="btn mt-8 flex items-center bg-brand-blue-dark px-8 py-4 font-semibold sm:mt-16 lg:text-lg"
+          class="btn mt-8 flex items-center rounded-xl bg-brand-blue-dark px-8 py-4 font-semibold sm:mt-16 lg:text-lg"
           href="#about-section"
           role="button"
         >
           Learn More
-          <i class="fa-regular fa-circle-down ml-2 text-lg"></i>
+          <i class="fa-regular fa-circle-down ml-2 text-xl"></i>
         </a>
       </div>
     </header>
@@ -146,6 +157,7 @@
           <h3 class="">Oils</h3>
           <div class="products-grid">
             <div class="product bg-[url('../images/2oz-coconut-oil.jpg')]">
+              <span class="title">Coconut Oil</span>
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
@@ -153,11 +165,16 @@
             <div
               class="product bg-[url('../images/1oz-castor-coconut-oil.jpg')]"
             >
+              <span class="title"
+                >Castor Coconut <br />
+                Oil</span
+              >
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
             </div>
             <div class="product bg-[url('../images/beard-oil.jpg')]">
+              <span class="title">Beard Oil</span>
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
@@ -165,6 +182,10 @@
             <div
               class="product bg-[url('../images/cold-pressed-castor-oil.jpg')]"
             >
+              <span class="title"
+                >Cold Pressed <br />
+                Castor Oil</span
+              >
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
@@ -182,11 +203,16 @@
             <div
               class="product bg-[url('../images/neem-and-mint-bar-soap.jpg')]"
             >
+              <span class="title"
+                >Neem & Mint <br />
+                Bar Soap</span
+              >
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
             </div>
             <div class="product bg-[url('../images/charcoal-bar-soap.jpg')]">
+              <span class="title">Charcoal Bar Soap</span>
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
@@ -194,6 +220,10 @@
             <div
               class="product bg-[url('../images/tumeric-kojic-bar-soap.jpg')]"
             >
+              <span class="title"
+                >Tumeric Kojic <br />
+                Bar Soap</span
+              >
               <button class="product-btn">
                 Learn More <i class="fa-regular fa-lightbulb"></i>
               </button>
@@ -225,11 +255,11 @@
             <summary class="faq-summary">This is another question?</summary>
             This is the answer to the question
           </details>
-          <details class="faq-details w-full bg-red-600" name="faq">
+          <details class="faq-detail w-full bg-red-600" name="faq">
             <summary class="faq-summary">This is the third question?</summary>
             This is the answer to the question
           </details>
-          <details class="faq-details w-full bg-red-600" name="faq">
+          <details class="faq-detail w-full bg-red-600" name="faq">
             <summary class="faq-summary">This is the final question?</summary>
             This is the answer to the question
           </details>
@@ -240,19 +270,27 @@
       ----------------------------------------------------------------------->
       <section
         id="contact-us-section"
-        class="py-20"
+        class="scroll-mt-8 bg-[url('https://images.pexels.com/photos/1654255/pexels-photo-1654255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover py-20"
         aria-labelledby="contact-us-header"
       >
         <form
-          class="mx-auto max-w-2xl rounded-lg p-8"
+          class="mx-auto max-w-2xl rounded-lg border-2 border-black bg-white p-8 shadow-md backdrop-blur-sm"
           action="https://formsubmit.co/bde4cbfa3114d07b24974e087ba512cb"
           method="POST"
         >
           <header>
-            <h2 id="contact-us-header" class="mb-8">Send Us a Message</h2>
+            <h2 id="contact-us-header" class="text-red text-md mb-8">
+              Send Us a Message😊!
+            </h2>
           </header>
           <div class="mb-8 grid grid-cols-1 gap-8">
-            <input type="text" name="name" placeholder="John Doe" required />
+            <input
+              type="text"
+              name="name"
+              placeholder="John Doe"
+              autofocus
+              required
+            />
             <input
               type="email"
               name="email"
