@@ -564,6 +564,11 @@ html {
   font-family: Roboto, sans-serif;
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 235 168 / var(--tw-bg-opacity, 1));
+}
+
 section {
   scroll-margin-top: 5rem;
   padding: 2rem;
@@ -594,6 +599,13 @@ h2 {
   text-align: center;
   font-size: 3rem;
   line-height: 1;
+  font-weight: 700;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
 }
 
@@ -652,7 +664,7 @@ textarea {
   }
   a:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+    background-color: rgb(114 161 38 / var(--tw-bg-opacity, 1));
   }
 }
 
@@ -708,9 +720,6 @@ textarea {
     width: 100%;
   }
   .product {
-    cursor: pointer;
-  }
-  .product {
     flex-direction: column;
   }
   .product {
@@ -757,6 +766,11 @@ textarea {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
+  .product:hover {
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
   .product {
     .title {
       margin-bottom: 1rem;
@@ -769,7 +783,10 @@ textarea {
       line-height: 2.25rem;
     }
     .title {
-      font-weight: 700;
+      font-weight: 800;
+    }
+    .title {
+      text-transform: uppercase;
     }
     .product-btn {
       border-radius: 0.375rem;
@@ -784,7 +801,7 @@ textarea {
     }
     .product-btn {
       --tw-bg-opacity: 1;
-      background-color: rgb(62 142 65 / var(--tw-bg-opacity, 1));
+      background-color: rgb(166 215 86 / var(--tw-bg-opacity, 1));
     }
     .product-btn {
       transition-property: all;
@@ -804,11 +821,9 @@ textarea {
 
 .faq-detail {
   width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
   .faq-summary {
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
   .faq-summary {
     padding: 1rem;
@@ -817,10 +832,6 @@ textarea {
 
 .fixed {
   position: fixed;
-}
-
-.relative {
-  position: relative;
 }
 
 .left-0 {
@@ -847,11 +858,6 @@ textarea {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .mb-4 {
@@ -957,10 +963,6 @@ textarea {
   resize: none;
 }
 
-.scroll-mt-16 {
-  scroll-margin-top: 4rem;
-}
-
 .scroll-mt-8 {
   scroll-margin-top: 2rem;
 }
@@ -1009,6 +1011,14 @@ textarea {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1033,9 +1043,18 @@ textarea {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .bg-black {
@@ -1043,19 +1062,24 @@ textarea {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-brand-blue-dark {
+.bg-brand-blue-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(44 62 80 / var(--tw-bg-opacity, 1));
+  background-color: rgb(2 18 18 / var(--tw-bg-opacity, 1));
 }
 
-.bg-brand-green {
+.bg-brand-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(141 201 47 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-600 {
+.bg-brand-green-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
+  background-color: rgb(85 120 28 / var(--tw-bg-opacity, 1));
+}
+
+.bg-brand-green-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 21 5 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -1063,12 +1087,38 @@ textarea {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-opacity-45 {
-  --tw-bg-opacity: 0.45;
+.bg-brand-green-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 79 18 / var(--tw-bg-opacity, 1));
 }
 
-.bg-opacity-75 {
-  --tw-bg-opacity: 0.75;
+.bg-brand-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 161 38 / var(--tw-bg-opacity, 1));
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-blue-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
+}
+
+.bg-brand-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 31 32 / var(--tw-bg-opacity, 1));
+}
+
+.bg-brand-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 165 168 / var(--tw-bg-opacity, 1));
+}
+
+.bg-brand-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 133 135 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\.\.\/images\/1oz-castor-coconut-oil\.jpg\'\)\] {
@@ -1123,6 +1173,15 @@ textarea {
   padding: 2rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1138,8 +1197,26 @@ textarea {
   padding-bottom: 1rem;
 }
 
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1171,21 +1248,12 @@ textarea {
   line-height: 1.75rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-semibold {
@@ -1254,9 +1322,13 @@ textarea {
     background-position: top;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:p-16 {
+    padding: 4rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1269,14 +1341,9 @@ textarea {
     display: flex;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .lg\:text-6xl {

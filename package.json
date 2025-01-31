@@ -2,13 +2,17 @@
   "name": "pure-zen-essence-website",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  },
   "keywords": [],
-  "author": "Elixer Enterprise",
+  "author": "Daniel Leith",
   "license": "ISC",
   "description": "",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7"
+  },
   "devDependencies": {
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",

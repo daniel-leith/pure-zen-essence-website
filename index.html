@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <!-- Custom JavaScript -->
     <script src="./dist/javascript/main.js" defer></script>
+    <script src="./dist/javascript/gsap.js"></script>
   </head>
 
   <body>
@@ -55,7 +56,7 @@
                                 NAVBAR 
     ======================================================================-->
     <nav
-      class="fixed left-0 right-0 top-0 z-10 flex select-none items-center justify-between bg-brand-blue-dark px-8 py-4 text-white"
+      class="bg-brand-green-800 fixed left-0 right-0 top-0 z-10 flex select-none items-center justify-between px-8 py-4 text-white"
     >
       <div class="flex">
         <a class="mr-12 flex items-center" href="#">
@@ -88,14 +89,17 @@
           href="#"
           >Login</a
         >
-        <div class="btn hidden bg-brand-green sm:inline-block" role="button">
+        <div
+          class="btn bg-brand-green-500 hidden sm:inline-block"
+          role="button"
+        >
           <span class="flex items-center">
             Sign up
             <i class="fa-regular fa-user ml-2 aspect-square text-2xl"></i>
           </span>
         </div>
         <div
-          class="flex aspect-square h-10 items-center justify-center rounded-full bg-brand-green p-2 sm:hidden"
+          class="bg-brand-green-500 flex aspect-square h-10 items-center justify-center rounded-full p-2 sm:hidden"
           role="button"
         >
           <i class="fa-regular fa-user text-2xl"></i>
@@ -106,23 +110,31 @@
                                 BANNER 
     =====================================================================--->
     <header
-      class="main-banner mt-[4.6rem] flex h-screen flex-col items-center justify-center bg-cover bg-fixed bg-bottom px-8 pb-4 text-white md:bg-top lg:px-16"
+      class="main-banner mt-[4.6rem] flex h-screen flex-col items-center justify-center bg-cover bg-fixed bg-bottom px-16 pb-4 text-white md:bg-top lg:px-32"
       role="banner"
     >
-      <div id="cta-container" class="flex flex-col items-center">
+      <div
+        id="cta-container"
+        class="flex flex-col items-center text-center font-bold"
+      >
         <h1 class="text-center text-4xl font-extrabold capitalize lg:text-6xl">
-          THE BEST OFFER ON THE MARKET FOR YOUR BUSINESS
+          <div class="mb-4">WELCOME TO PURE ZEN ESSENCE!</div>
+          <div>
+            Where <span class="text-brand-green">nature</span> meets
+            <span class="text-brand-green">wellness</span>. 🌿
+          </div>
         </h1>
-        <p class="my-8 text-center font-semibold md:text-xl lg:text-2xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          dolorem earum maiores tenetur.
-        </p>
-        <p class="font-light md:text-xl">
-          Dignissimos libero recusandae delectus reprehenderit laboriosam,
-          nesciunt quos?
-        </p>
+        <!-- <p class="mt-8 md:text-2xl">
+          Discover 100% natural, family-crafted products made in Jamaica with
+          care, integrity, and love for the earth. From our signature
+          cold-pressed castor oil to eco-conscious creations, we bring balance
+          and vitality to your life.
+          <br />
+          <br />
+          Experience the power of nature—crafted for you.
+        </p> -->
         <a
-          class="btn mt-8 flex items-center rounded-xl bg-brand-blue-dark px-8 py-4 font-semibold sm:mt-16 lg:text-lg"
+          class="btn bg-brand-green-600 flex items-center rounded-xl px-8 py-4 font-semibold sm:mt-16 lg:text-lg"
           href="#about-section"
           role="button"
         >
@@ -138,10 +150,30 @@
       <!---------------------------------------------------------------------
       |       ABOUT US SECTION                                              |
       ----------------------------------------------------------------------->
-      <section id="about-section" aria-labelledby="about-header">
-        <header>
-          <h2 id="about-header">About Us</h2>
-        </header>
+      <section
+        id="about-section"
+        class="bg-brand-blue-600 text-white md:p-16"
+        aria-labelledby="about-header"
+      >
+        <div class="rounded-md border-2 border-white p-8">
+          <header>
+            <h2 id="about-header" class="text-left">About Us</h2>
+          </header>
+          <p class="mb-8">
+            Pure Zen Essence, a family-owned natural products business proudly
+            rooted in the heart of Wakefield Savannah, St. Catherine, Jamaica.
+            Founded by the Carty family, our mission is to provide 100% Natural
+            products that promote overall health and wellness.
+          </p>
+          <p>
+            At Pure Zen Essence, we believe that nature holds the key to true
+            balance and vitality. One of our flagship products is cold-pressed
+            castor oil, celebrated for its nourishing properties for hair, skin,
+            and overall wellness. Every product we create is thoughtfully
+            crafted to enhance your well-being while remaining environmentally
+            conscious.
+          </p>
+        </div>
       </section>
       <!---------------------------------------------------------------------
       |       PRODUCTS SECTION                                              |
@@ -242,9 +274,13 @@
       <!---------------------------------------------------------------------
       |       FAQs SECTION                                                  |
       ----------------------------------------------------------------------->
-      <section id="faq-section" aria-labelledby="faq-header">
+      <section
+        id="faq-section"
+        class="bg-black py-40"
+        aria-labelledby="faq-header"
+      >
         <header>
-          <h2 id="faq-header">FAQs</h2>
+          <h2 id="faq-header" class="text-white">FAQs</h2>
         </header>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <details class="faq-detail" name="faq">
@@ -255,11 +291,11 @@
             <summary class="faq-summary">This is another question?</summary>
             This is the answer to the question
           </details>
-          <details class="faq-detail w-full bg-red-600" name="faq">
+          <details class="faq-detail w-full" name="faq">
             <summary class="faq-summary">This is the third question?</summary>
             This is the answer to the question
           </details>
-          <details class="faq-detail w-full bg-red-600" name="faq">
+          <details class="faq-detail w-full" name="faq">
             <summary class="faq-summary">This is the final question?</summary>
             This is the answer to the question
           </details>
@@ -317,7 +353,7 @@
     <!--=====================================================================
                                 FOOTER 
     ======================================================================-->
-    <footer class="bg-black p-8 text-white">
+    <footer class="bg-brand-green-950 p-8 text-white">
       <ul class="mx-4 mb-4 flex justify-center gap-8 text-3xl">
         <li>
           <a href="https://instagram.com/purezenessence" target="_blank">
@@ -331,9 +367,7 @@
         </li>
       </ul>
       <div>
-        <p class="mb-8 text-center text-white">
-          Copyright &copy; 2025 Pure Zen Essence
-        </p>
+        <p class="mb-8 text-center">Copyright &copy; 2025 Pure Zen Essence</p>
         <p class="text-center">
           Powered by
           <a
