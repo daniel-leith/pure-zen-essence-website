@@ -14,13 +14,6 @@
       href="./images/pure-zen-essence-icon.png"
       type="image/x-icon"
     />
-    <!-- Font Awesome Library -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -28,14 +21,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- GSAP Library -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -45,7 +43,8 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./dist/output.css" />
     <!-- Custom JavaScript -->
-    <script src="./dist/javascript/gsap.js"></script>
+    <script src="./javascript/main.js" defer></script>
+    <script src="./javascript/gsap.js"></script>
   </head>
 
   <body>
@@ -89,8 +88,11 @@
     </nav>
     <!-- Hero Section -->
     <header class="mt-20 p-4 pb-32 md:px-8 md:py-16 lg:max-w-screen-md">
-      <p class="mt-2 text-center text-2xl md:text-3xl lg:mt-1 lg:text-4xl">
-        <span id="hero-text" class="mb-4 block font-bold lg:mb-8">
+      <p
+        id="hero-text"
+        class="mt-2 text-center text-2xl md:text-3xl lg:mt-1 lg:text-4xl"
+      >
+        <span class="mb-4 block font-bold lg:mb-8">
           Welcome to
           <span class="font-black text-brand-green"> Pure Zen Essence </span>, a
           family-owned natural products business proudly rooted in the heart of
