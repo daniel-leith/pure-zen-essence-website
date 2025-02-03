@@ -1158,6 +1158,18 @@ details.left[open] {
           user-select: none;
 }
 
+.scroll-m-20 {
+  scroll-margin: 5rem;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
+}
+
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
 .scroll-pt-80 {
   scroll-padding-top: 20rem;
 }
