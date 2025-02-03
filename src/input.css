@@ -9,10 +9,139 @@
     }
   }
 
+  * {
+    @apply box-border;
+    /* border: 1px solid orange; */
+  }
+
   html {
     font-family: Roboto, sans-serif;
+  }
+
+  h1 {
+    @apply text-center text-5xl font-black;
+  }
+
+  h2 {
+    @apply text-center text-4xl font-black;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  a {
+    @apply inline-block;
+  }
+
+  input,
+  textarea {
+    @apply mb-4 block w-full border-2 border-white bg-primary px-4 py-2 text-white placeholder:text-white placeholder:opacity-95 focus:outline-none;
+  }
+
+  input {
+    @apply rounded-md;
+  }
+
+  textarea {
+    @apply rounded-lg;
   }
 }
 
 @layer components {
+  .section-link {
+    /* Section links in the navbar */
+    @apply px-4 py-2 font-bold transition-colors duration-300;
+  }
+
+  .button {
+    /* Button default styles */
+    @apply rounded-md px-4 py-2 font-bold text-white shadow-sm drop-shadow-lg;
+  }
+
+  .product-grid {
+    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+
+    .product-image {
+      @apply flex h-60 items-end justify-center rounded-md rounded-br-[70px] rounded-tl-[70px] bg-black bg-cover bg-center p-8 bg-blend-lighten shadow-md drop-shadow-xl;
+    }
+
+    h3 {
+      @apply font-black;
+    }
+  }
+
+  .testimonial-card {
+    @apply relative max-w-72 place-self-center rounded-xl bg-white shadow-md drop-shadow-xl;
+
+    .image {
+      @apply absolute left-1/2 top-0 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-brand-green object-cover object-center;
+    }
+  }
+
+  details {
+    @apply items-center bg-white text-primary shadow-md drop-shadow-lg;
+
+    summary {
+      @apply flex cursor-pointer items-center gap-2 bg-brand-blue p-2 font-semibold text-white;
+    }
+
+    i {
+      @apply grid h-10 w-10 place-content-center rounded-full border-4 border-white text-center text-xl;
+    }
+  }
+
+  details.right {
+    @apply ml-4 rounded-l-full;
+
+    summary {
+      @apply rounded-l-full;
+    }
+
+    p {
+      @apply ml-8 py-2 pr-8;
+    }
+  }
+
+  details.right[open] {
+    @apply rounded-l-xl;
+
+    summary {
+      @apply rounded-bl-none rounded-tl-xl;
+    }
+  }
+
+  details.left {
+    @apply mr-4 rounded-r-full;
+
+    summary {
+      @apply rounded-r-full;
+
+      i {
+        @apply ml-4;
+      }
+    }
+
+    p {
+      @apply ml-8 py-2 pr-8;
+    }
+  }
+
+  details.left[open] {
+    @apply rounded-r-xl;
+
+    summary {
+      @apply rounded-br-none rounded-tr-xl;
+    }
+  }
+}
+
+@layer utilities {
+  .brand-underline {
+    @apply underline decoration-brand-green-400 decoration-4 underline-offset-4;
+  }
+
+  .icon-space-left {
+    @apply ml-2;
+  }
 }
