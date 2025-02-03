@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en-JM">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Daniel Leith" />
     <meta name="owner" content="Yoshika Leith-Carty, Dushaine Carty" />
+    <!-- TODO: Add description -->
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pure Zen Essence | Beauty By Nature</title>
@@ -47,5 +48,418 @@
     <script src="./dist/javascript/gsap.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <!-- Navigation Bar -->
+    <nav
+      class="fixed left-0 right-0 top-0 z-10 flex items-center justify-between bg-brand-darkblue p-4 text-white shadow-sm shadow-black drop-shadow-md"
+    >
+      <div>
+        <a class="flex items-center" href="#">
+          <img
+            class="w-10 animate-bounce"
+            src="./images/pure-zen-essence-icon.png"
+            alt="Pure Zen Essence Icon"
+          />
+          <span class="ml-2 hidden text-lg font-bold sm:block">
+            Pure Zen Essence
+          </span>
+        </a>
+      </div>
+      <ul
+        class="flex items-center rounded-lg border-2 border-white text-center"
+      >
+        <li
+          class="section-link cursor-pointer hover:text-brand-green md:hidden"
+        >
+          MENU
+        </li>
+        <li class="section-link hidden hover:text-brand-green md:block">
+          <a href="#about-us-section">ABOUT US</a>
+        </li>
+        <li class="section-link hidden hover:text-brand-green md:block">
+          <a href="#our-products-section">OUR PRODUCTS</a>
+        </li>
+        <li class="section-link hidden hover:text-brand-green md:block">
+          <a href="#testimonials-section">TESTIMONIALS</a>
+        </li>
+        <li class="section-link hidden hover:text-brand-green md:block">
+          <a href="#faqs-section">FAQs</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <header class="mt-20 p-4 pb-32 md:px-8 md:py-16">
+      <p class="mt-2 text-center text-2xl md:text-3xl">
+        <span class="mb-4 block font-bold">
+          Welcome to
+          <span class="font-black text-brand-green"> Pure Zen Essence </span>, a
+          family-owned natural products business proudly rooted in the heart of
+          Wakefield Savannah, St. Catherine, Jamaica.
+        </span>
+        Founded by the Carty family, our mission is to provide
+        <span class="brand-underline font-bold"> 100% Natural </span>
+        products that promote overall
+        <span class="brand-underline">
+          <span class="font-bold">health</span>
+          and
+          <span class="font-bold">wellness</span>.
+        </span>
+      </p>
+      <div class="mt-6 flex justify-center font-bold text-white">
+        <a class="button inline-block bg-primary" href="#about-us-section">
+          Learn More<i class="fa-solid fa-arrow-down icon-space-left"></i>
+        </a>
+        <a
+          class="button ml-4 inline-block bg-brand-green"
+          href="#contact-us-section"
+        >
+          Contact Us<i class="fa-solid fa-paper-plane icon-space-left"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <!-- About Us Section -->
+      <section
+        id="about-us-section"
+        aria-labelledby="about-us-header"
+        class="relative bg-primary p-4 pt-32 text-white md:flex md:p-8 lg:pr-16"
+      >
+        <img
+          class="absolute left-1/2 top-0 flex h-48 w-48 -translate-x-1/2 -translate-y-1/2 items-center gap-0 rounded-full border-4 border-white bg-neutral-500 object-cover object-center drop-shadow-lg md:left-0 md:top-1/2 md:h-96 md:w-96 lg:h-80 lg:w-80"
+          src="images/1oz-castor-coconut-oil.jpg"
+          alt="About Us Image"
+        />
+        <div class="md:ml-44">
+          <header class="mb-4">
+            <h2 id="about-us-header" class="border-b-4 border-brand-green pb-4">
+              ABOUT US
+            </h2>
+          </header>
+          <div>
+            <div class="mb-4">
+              <h3 class="mb-1">Mission</h3>
+              <p>
+                As a family-owned business, we are committed to cultivating
+                high-quality products with care, integrity, and profound respect
+                for the land. Through our hard work and shared values, we strive
+                to nourish our community while safeguarding our legacy for
+                future generations.
+              </p>
+            </div>
+            <div class="mb-8">
+              <h3 class="mb-1">Vision</h3>
+              <p>
+                Our vision is to be a trusted family business that nurtures
+                enduring relationships, champions sustainable farming practices,
+                and makes a meaningful impact on both our community and the
+                environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products Section -->
+      <section
+        id="our-products-section"
+        aria-labelledby="our-products-header"
+        class="bg-brand-green-200 px-4 py-8 md:px-16"
+      >
+        <header>
+          <h2
+            id="our-products-header"
+            class="border-b-8 border-brand-blue pb-4"
+          >
+            OUR PRODUCTS
+          </h2>
+        </header>
+        <div>
+          <div
+            class="mb-4 flex flex-col items-center border-b-8 border-brand-blue pb-8"
+          >
+            <p
+              class="mb-4 mt-5 inline-block rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
+            >
+              Oil Products
+            </p>
+            <div class="product-grid">
+              <article>
+                <div
+                  class="product-image bg-[url('../images/1oz-castor-coconut-oil.jpg')]"
+                >
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">
+                  CASTOR-COCONUT <br />
+                  OIL
+                </h3>
+              </article>
+              <article>
+                <div
+                  class="product-image bg-[url('../images/2oz-coconut-oil.jpg')]"
+                >
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">COCONUT OIL</h3>
+              </article>
+              <article>
+                <div class="product-image bg-[url('../images/beard-oil.jpg')]">
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">BEARD OIL</h3>
+              </article>
+              <article>
+                <div
+                  class="product-image bg-[url('../images/cold-pressed-castor-oil.jpg')]"
+                >
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">COLD-PRESSED CASTOR OIL</h3>
+              </article>
+            </div>
+          </div>
+          <div class="mb-4 flex flex-col items-center">
+            <p
+              class="my-4 inline-block rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
+            >
+              Bar Soap Products
+            </p>
+            <div class="product-grid">
+              <article>
+                <div
+                  class="product-image bg-[url('../images/charcoal-bar-soap.jpg')]"
+                >
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">CHARCOAL BAR SOAP</h3>
+              </article>
+              <article>
+                <div
+                  class="product-image bg-[url('../images/neem-and-mint-bar-soap.jpg')]"
+                >
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">NEEM &amp; MINT BAR SOAP</h3>
+              </article>
+              <article>
+                <div
+                  class="product-image bg-[url('../images/turmeric-kojic-bar-soap.jpg')]"
+                >
+                  <button class="button mb-1 bg-brand-darkblue" type="button">
+                    More Info
+                  </button>
+                </div>
+                <h3 class="mt-2 text-center">TURMERIC-KOJIC BAR SOAP</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials-section"
+        aria-labelledby="testimonials-header"
+        class="bg-brand-green p-8 text-white md:px-4"
+      >
+        <!-- TODO: Add shadow to testimonials -->
+        <header class="mb-16">
+          <h2 id="testimonials-header" class="mb-4">TESTIMONIALS</h2>
+        </header>
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 sm:px-8 md:grid-cols-3"
+        >
+          <article class="testimonial-card">
+            <header class="rounded-t-xl bg-primary px-4 pb-2 pt-12">
+              <img
+                class="image"
+                src="images/1oz-castor-coconut-oil.jpg"
+                alt="Profile Image"
+              />
+              <p class="mt-2 text-center font-bold">@Person Name</p>
+            </header>
+            <div class="p-4">
+              <p class="text-primary">
+                These products are excellent! I can recommend them to anyone. I
+                have a luscious beard now. 😊
+              </p>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <header class="rounded-t-xl bg-primary px-4 pb-2 pt-12">
+              <img
+                class="image"
+                src="images/1oz-castor-coconut-oil.jpg"
+                alt="Profile Image"
+              />
+              <p class="mt-2 text-center font-bold">@Person Name</p>
+            </header>
+            <div class="p-4">
+              <p class="text-primary">
+                These products are excellent! I can recommend them to anyone. I
+                have a luscious beard now. 😊
+              </p>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <header class="rounded-t-xl bg-primary px-4 pb-2 pt-12">
+              <img
+                class="image"
+                src="images/1oz-castor-coconut-oil.jpg"
+                alt="Profile Image"
+              />
+              <p class="mt-2 text-center font-bold">@Person Name</p>
+            </header>
+            <div class="p-4">
+              <p class="text-primary">
+                These products are excellent! I can recommend them to anyone. I
+                have a luscious beard now. 😊
+              </p>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <header class="rounded-t-xl bg-primary px-4 pb-2 pt-12">
+              <img
+                class="image"
+                src="images/1oz-castor-coconut-oil.jpg"
+                alt="Profile Image"
+              />
+              <p class="mt-2 text-center font-bold">@Person Name</p>
+            </header>
+            <div class="p-4">
+              <p class="text-primary">
+                These products are excellent! I can recommend them to anyone. I
+                have a luscious beard now. 😊
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- FAQs Section -->
+      <section
+        id="faqs-section"
+        aria-labelledby="faqs-header"
+        class="bg-brand-darkblue py-8 text-white"
+      >
+        <header class="mb-4">
+          <h2 id="faqs-header">FAQs</h2>
+        </header>
+        <div class="flex flex-col gap-4 md:gap-8">
+          <details class="right" name="faq">
+            <summary>
+              <i class="fa-solid fa-chevron-down"></i>
+              What is Pure Zen Essence?
+            </summary>
+            <p>Pure Zen Essence is a natural products business.</p>
+          </details>
+          <details class="left" name="faq">
+            <summary>
+              <i class="fa-solid fa-chevron-down"></i>
+              What is Pure Zen Essence?
+            </summary>
+            <p>Pure Zen Essence is a natural products business.</p>
+          </details>
+          <details class="right" name="faq">
+            <summary>
+              <i class="fa-solid fa-chevron-down"></i>
+              What is Pure Zen Essence?
+            </summary>
+            <p>Pure Zen Essence is a natural products business.</p>
+          </details>
+        </div>
+      </section>
+      <!-- Contact Us Section -->
+      <section
+        id="contact-us-section"
+        aria-labelledby="contact-us-header"
+        class="bg-brand-blue-100 px-4 py-8"
+      >
+        <header class="mb-4">
+          <h2 id="contact-us-header">CONTACT US</h2>
+        </header>
+        <!-- Add working form action -->
+        <form class="mx-auto block w-full max-w-lg" action="" method="POST">
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            autofocus
+            required
+          />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message"
+            rows="5"
+            required
+          ></textarea>
+          <button
+            id="submit"
+            name="submit"
+            class="mx-auto block w-fit rounded-md bg-primary px-4 py-2 font-bold text-white"
+            type="submit"
+          >
+            Send Message<i class="fa-solid fa-paper-plane ml-2"></i>
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-brand-green-900 p-4 pb-8 text-white md:py-8">
+      <address class="mb-4">
+        <ul class="flex justify-center gap-4 text-4xl md:gap-8">
+          <li>
+            <a href="https://instagram.com/purezenessence" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <!-- FIXME: Add working link -->
+            <a href="https://tiktok.com/purezenessence" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <!-- TODO: Replace this with a WhatsApp link -->
+            <a href="https://facebook.com/purezenessence" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </address>
+      <div
+        class="flex flex-col justify-between text-center text-sm md:flex-row"
+      >
+        <p class="mb-1">Copyright &copy; 2025 Pure Zen Essence</p>
+        <p>
+          Created by
+          <a
+            class="underline underline-offset-4"
+            href="https://instagram.com/elixerprince"
+            target="_blank"
+          >
+            Elixer Prince
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
