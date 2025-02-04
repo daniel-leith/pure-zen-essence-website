@@ -60,10 +60,10 @@
   }
 
   .product-grid {
-    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8;
 
     .product-image {
-      @apply flex h-60 select-none items-end justify-center rounded-md rounded-br-[70px] rounded-tl-[70px] bg-black bg-cover bg-center p-8 bg-blend-lighten shadow-md drop-shadow-xl;
+      @apply flex h-60 select-none items-end justify-center rounded-md rounded-br-[70px] rounded-tl-[70px] bg-black bg-cover bg-center p-8 bg-blend-lighten shadow-md drop-shadow-xl transition-all duration-300 hover:scale-105;
 
       button {
         @apply transition-colors duration-300 hover:bg-brand-darkblue-600 active:scale-95;
