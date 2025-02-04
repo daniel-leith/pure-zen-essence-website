@@ -1300,6 +1300,10 @@ details.left[open] {
   width: 100%;
 }
 
+.w-\[70px\] {
+  width: 70px;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
