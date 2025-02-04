@@ -28,10 +28,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -89,15 +90,17 @@
       </ul>
     </nav>
     <!-- Hero Section -->
-    <header class="relative mt-20 grid w-full grid-cols-2 p-4 pb-16 md:px-8">
+    <header
+      class="relative mt-20 grid w-full grid-cols-1 p-4 pb-28 md:px-8 md:pb-24 lg:grid-cols-2"
+    >
       <div>
         <p
           id="hero-text"
-          class="mt-2 text-center text-2xl md:text-3xl lg:mt-1 lg:max-w-screen-md lg:text-4xl"
+          class="mt-2 text-center text-2xl md:pt-8 md:text-3xl lg:mt-1 lg:max-w-screen-md lg:text-4xl"
         >
           <span class="mb-4 block font-bold lg:mb-8">
             Welcome to
-            <span class="font-black text-brand-green"> Pure Zen Essence </span>,
+            <span class="font-black text-brand-green"> Pure Zen Essence</span>,
             a family-owned natural products business proudly rooted in the heart
             of Wakefield Savannah, St. Catherine, Jamaica.
           </span>
@@ -127,7 +130,7 @@
           </a>
         </div>
       </div>
-      <div class="relative mb-20 ml-8 mt-44 w-full">
+      <div class="relative mb-20 ml-8 mt-44 hidden w-full lg:block">
         <img
           class="absolute z-10 mx-auto block h-[416px] rounded-2xl shadow-lg"
           src="./images/1oz-castor-coconut-oil.jpg"
@@ -143,7 +146,7 @@
         class="relative scroll-mt-20 bg-primary p-4 pt-32 text-white md:flex md:p-8 lg:pr-16 lg:pt-32"
       >
         <img
-          class="absolute left-1/2 top-0 flex h-48 w-48 -translate-x-1/2 -translate-y-1/2 items-center gap-0 rounded-full border-4 border-white bg-neutral-500 object-cover object-center drop-shadow-lg transition-transform duration-300 hover:scale-125 md:left-0 md:top-1/2 md:h-96 md:w-96 lg:h-96 lg:w-96"
+          class="absolute left-1/2 top-0 h-48 w-48 -translate-x-1/2 -translate-y-1/2 items-center gap-0 rounded-full border-4 border-white bg-neutral-500 object-cover object-center drop-shadow-lg transition-transform duration-300 hover:scale-125 md:left-0 md:top-1/2 md:h-96 md:w-96 lg:flex lg:h-96 lg:w-96"
           src="images/1oz-castor-coconut-oil.jpg"
           alt="About Us Image"
         />
@@ -366,10 +369,10 @@
       <section
         id="faqs-section"
         aria-labelledby="faqs-header"
-        class="scroll-mt-20 bg-brand-darkblue py-8 text-white"
+        class="scroll-mt-20 bg-brand-darkblue py-8 text-white lg:py-24"
       >
-        <header class="mb-4">
-          <h2 id="faqs-header">FAQs</h2>
+        <header class="mb-4 lg:mb-8">
+          <h2 id="faqs-header">FAQs❓</h2>
         </header>
         <div class="flex flex-col gap-4 md:gap-8">
           <details class="right" name="faq">
@@ -399,7 +402,7 @@
       <section
         id="contact-us-section"
         aria-labelledby="contact-us-header"
-        class="scroll-mt-20 bg-brand-blue-100 px-4 py-8"
+        class="scroll-mt-20 bg-brand-blue-100 px-4 py-8 lg:py-20"
       >
         <header class="mb-4">
           <h2 id="contact-us-header">CONTACT US</h2>
@@ -442,32 +445,30 @@
     <!-- Footer Section -->
     <footer class="bg-brand-green-900 p-4 pb-8 text-white md:py-8 lg:px-24">
       <address class="mb-4">
-        <ul class="flex justify-center gap-4 text-4xl md:gap-4">
+        <ul class="mt-2 flex justify-center gap-4 md:gap-4">
           <li>
             <a
-              class="rounded-full border-4 border-transparent p-4 transition-all duration-500 hover:scale-110 hover:border-white"
+              class="social-icon"
               href="https://instagram.com/purezenessence"
               target="_blank"
+              draggable="true"
             >
               <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>
             <a
-              class="rounded-full border-4 border-transparent p-4 transition-all duration-500 hover:scale-110 hover:border-white"
+              class="social-icon"
               href="https://tiktok.com/@purezenessence"
               target="_blank"
+              draggable="true"
             >
               <i class="fa-brands fa-tiktok"></i>
             </a>
           </li>
           <li>
             <!-- TODO: Replace this with a WhatsApp link -->
-            <a
-              class="rounded-full border-4 border-transparent p-4 transition-all duration-500 hover:scale-110 hover:border-white"
-              href=""
-              target="_blank"
-            >
+            <a class="social-icon" href="" target="_blank" draggable="true">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>

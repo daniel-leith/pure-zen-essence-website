@@ -18,6 +18,10 @@
     font-family: Roboto, sans-serif;
   }
 
+  body {
+    @apply bg-white text-primary;
+  }
+
   h2 {
     @apply text-center text-4xl font-black lg:text-5xl;
   }
@@ -44,7 +48,7 @@
   }
 
   textarea {
-    @apply rounded-lg resize-none;
+    @apply resize-none rounded-lg;
   }
 }
 
@@ -76,7 +80,11 @@
   }
 
   .testimonial-card {
-    @apply relative max-w-72 select-none place-self-center rounded-xl bg-white shadow-md drop-shadow-xl transition-transform duration-300 hover:scale-105;
+    @apply relative max-w-72 select-none place-self-center rounded-xl bg-white pb-4 shadow-md drop-shadow-xl transition-transform duration-300 hover:scale-105;
+
+    header {
+      @apply font-black;
+    }
 
     .image {
       @apply absolute left-1/2 top-0 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-brand-green object-cover object-center;
@@ -88,26 +96,32 @@
   }
 
   details {
-    @apply items-center bg-white text-primary shadow-md drop-shadow-lg;
+    @apply items-center bg-white font-semibold text-primary shadow-md drop-shadow-lg transition-transform duration-300 hover:scale-105;
 
     summary {
-      @apply flex cursor-pointer items-center gap-2 bg-brand-blue p-2 font-semibold text-white;
-    }
+      @apply flex cursor-pointer select-none items-center gap-2 bg-brand-blue p-2 font-semibold text-white lg:text-lg;
 
+      i {
+        @apply grid h-10 w-10 place-content-center rounded-full border-4 border-white text-center text-xl lg:h-12 lg:w-12;
+      }
+    }
+  }
+
+  details[open] {
     i {
-      @apply grid h-10 w-10 place-content-center rounded-full border-4 border-white text-center text-xl;
+      @apply rotate-180 transition-transform duration-700;
     }
   }
 
   details.right {
-    @apply ml-4 rounded-l-full;
+    @apply ml-4 rounded-l-full lg:ml-16;
 
     summary {
-      @apply rounded-l-full;
+      @apply rounded-l-full lg:text-2xl;
     }
 
     p {
-      @apply ml-8 py-2 pr-8;
+      @apply ml-8 py-2 pr-8 font-semibold;
     }
   }
 
@@ -120,18 +134,18 @@
   }
 
   details.left {
-    @apply mr-4 rounded-r-full;
+    @apply mr-4 rounded-r-full lg:mr-16;
 
     summary {
-      @apply rounded-r-full;
+      @apply rounded-r-full lg:text-2xl;
 
       i {
-        @apply ml-4;
+        @apply ml-4 lg:ml-16;
       }
     }
 
     p {
-      @apply ml-8 py-2 pr-8;
+      @apply ml-8 py-2 pr-8 font-bold lg:ml-24;
     }
   }
 
@@ -141,6 +155,10 @@
     summary {
       @apply rounded-br-none rounded-tr-xl;
     }
+  }
+
+  .social-icon {
+    @apply rounded-full border-2 border-transparent px-4 py-2 text-2xl transition-all duration-500 hover:scale-110 hover:border-white md:border-4 md:p-4 md:text-4xl;
   }
 }
 
