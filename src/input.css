@@ -66,16 +66,20 @@
   .product-grid {
     @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8;
 
-    .product-image {
-      @apply flex h-60 select-none items-end justify-center rounded-md rounded-br-[70px] rounded-tl-[70px] bg-black bg-cover bg-center p-8 bg-blend-lighten shadow-md drop-shadow-xl transition-all duration-300 hover:scale-105;
+    .product {
+      @apply drop-shadow-xl transition-all duration-300 hover:scale-105;
 
-      button {
-        @apply transition-colors duration-300 hover:bg-brand-darkblue-600 active:scale-95;
+      .product-image {
+        @apply flex h-60 select-none items-end justify-center rounded-tl-[70px] rounded-tr-md bg-black bg-cover bg-center p-8 bg-blend-lighten;
+
+        button {
+          @apply button mb-1 bg-brand-darkblue transition-colors duration-300 hover:bg-brand-darkblue-600 active:scale-95;
+        }
       }
-    }
 
-    h3 {
-      @apply font-black;
+      h3 {
+        @apply font-old rounded-bl-md rounded-br-[70px] bg-primary px-4 py-2 text-center text-white;
+      }
     }
   }
 
