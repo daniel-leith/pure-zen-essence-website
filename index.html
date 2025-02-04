@@ -195,7 +195,7 @@
             class="mb-4 flex flex-col items-center border-b-8 border-brand-blue pb-8"
           >
             <p
-              class="mb-4 mt-5 inline-block rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
+              class="mb-4 mt-5 inline-block select-none rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
             >
               Oil Products
             </p>
@@ -245,7 +245,7 @@
           </div>
           <div class="mb-4 flex flex-col items-center">
             <p
-              class="my-4 inline-block rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
+              class="my-4 inline-block select-none rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
             >
               Bar Soap Products
             </p>
@@ -431,7 +431,7 @@
           <button
             id="submit"
             name="submit"
-            class="mx-auto block w-fit rounded-md bg-primary px-4 py-2 font-bold text-white"
+            class="button mx-auto block w-fit bg-primary hover:bg-primary-600 active:scale-95"
             type="submit"
           >
             Send Message<i class="fa-solid fa-paper-plane ml-2"></i>
@@ -440,30 +440,44 @@
       </section>
     </main>
     <!-- Footer Section -->
-    <footer class="bg-brand-green-900 p-4 pb-8 text-white md:py-8">
+    <footer class="bg-brand-green-900 p-4 pb-8 text-white md:py-8 lg:px-24">
       <address class="mb-4">
-        <ul class="flex justify-center gap-4 text-4xl md:gap-8">
+        <ul class="flex justify-center gap-4 text-4xl md:gap-4">
           <li>
-            <a href="https://instagram.com/purezenessence" target="_blank">
+            <a
+              class="rounded-full border-4 border-transparent p-4 transition-all duration-500 hover:scale-110 hover:border-white"
+              href="https://instagram.com/purezenessence"
+              target="_blank"
+            >
               <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="https://tiktok.com/@purezenessence" target="_blank">
+            <a
+              class="rounded-full border-4 border-transparent p-4 transition-all duration-500 hover:scale-110 hover:border-white"
+              href="https://tiktok.com/@purezenessence"
+              target="_blank"
+            >
               <i class="fa-brands fa-tiktok"></i>
             </a>
           </li>
           <li>
             <!-- TODO: Replace this with a WhatsApp link -->
-            <a href="https://facebook.com/purezenessence" target="_blank">
+            <a
+              class="rounded-full border-4 border-transparent p-4 transition-all duration-500 hover:scale-110 hover:border-white"
+              href=""
+              target="_blank"
+            >
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>
         </ul>
       </address>
       <div class="flex flex-col justify-between text-center md:flex-row">
-        <p class="mb-1 text-sm">Copyright &copy; 2025 Pure Zen Essence</p>
-        <p class="text-sm">
+        <p class="mb-1 text-sm font-bold">
+          Copyright &copy; 2025 Pure Zen Essence
+        </p>
+        <p class="text-sm font-bold">
           Created by
           <a
             class="underline underline-offset-4"
