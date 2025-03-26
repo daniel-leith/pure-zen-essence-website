@@ -1,0 +1,23 @@
+//********************************************************
+// This file contains all of the components that are used
+// throughout the website.
+//********************************************************
+@use "../utils" as *;
+@use "../global" as *;
+
+.contact-us-button {
+  //*** Appearance ***//
+  @extend %button;
+  background-color: var(--primary-color);
+  border: toRem(2) solid var(--primary-color);
+  font-weight: bold;
+
+  &__icon {
+    //*** Position ***//
+    margin-right: 0.25rem;
+
+    //*** Appearance ***//
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+}

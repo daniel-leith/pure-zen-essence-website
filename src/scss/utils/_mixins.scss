@@ -1,0 +1,30 @@
+//*******************************************************
+// This file contains all of the mixins that are used
+// in the repository.
+//*******************************************************
+@mixin select-none {
+  // This removes the ability to select text
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@mixin rounded-square($size) {
+  // This creates a fully rounded square based on a specified size
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+}
+
+@mixin card-face {
+  //*** Position ***//
+  position: absolute;
+
+  //*** Appearance ***//
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+
+  //*** Behaviour ***//
+  backface-visibility: hidden;
+}

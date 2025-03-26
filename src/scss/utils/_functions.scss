@@ -1,0 +1,23 @@
+//*******************************************************
+// This file contains all of the functions that are used
+// in the repository.
+//*******************************************************
+@use "sass:math";
+
+@function toRem($px) {
+  // This converts px to rem
+  @if math.is-unitless($px) {
+    @return math.div($px, 16) + rem;
+  }
+
+  @error "The rem() function only accepts unitless values.";
+}
+
+@function toEm($px) {
+  // This converts px to em
+  @if math.is-unitless($px) {
+    @return math.div($px, 16) + em;
+  }
+
+  @error "The em() function only accepts unitless values.";
+}

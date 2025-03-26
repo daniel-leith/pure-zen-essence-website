@@ -1,0 +1,33 @@
+//*****************************************************
+// This file contains all of the placeholders/templates
+// that are used in the repository.
+//*****************************************************
+@use "functions" as *;
+@use "variables" as *;
+
+%grid {
+  //*** Display ***//
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+
+  //*** Appearance ***//
+  padding: 1rem;
+}
+
+%heading {
+  //*** Appearance ***//
+  font-weight: bold;
+  line-height: 120%; // Makes headings more readable
+}
+
+%button {
+  //*** Appearance ***//
+  border: none;
+  border-radius: var(--small-radius);
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+
+  //*** Behaviour ***//
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+:root {
+  //*** Font Family ***//
+  --primary-font: "Poppins", sans-serif;
+
+  //*** Colours ***//
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(255, 255, 255);
+  --brand-blue: rgb(22, 165, 168);
+  --brand-green: rgb(141, 201, 47);
+  --brand-dark-blue: rgb(11, 27, 42);
+  --navbar-link-hover: rgba(255, 255, 255, 0.25);
+  --card-border-color: rgb(175, 175, 175);
+
+  //*** Radii ***//
+  --small-radius: 0.25rem;
+  --medium-radius: 0.5rem;
+  --large-radius: 0.75rem;
+  --xl-radius: 1rem;
+  --full-radius: 50%;
+}

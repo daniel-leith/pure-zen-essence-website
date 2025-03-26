@@ -1,0 +1,66 @@
+@use "../utils" as *;
+
+.header {
+  //*** Position ***//
+  margin-top: toRem(88.11);
+
+  //*** Display ***//
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+
+  //*** Appearance ***//
+  min-height: 100dvh;
+  padding: 1rem;
+
+  &__cta-text {
+    //*** Display ***//
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+
+    //*** Animation ***//
+    animation: fade-in 2.5s;
+
+    //*** Appearance ***//
+    font-size: 2.488rem;
+
+    .business-name {
+      //*** Appearance ***//
+      border-bottom: 0.5rem solid var(--brand-green);
+    }
+  }
+
+  &__cta-button-container {
+    //*** Display ***//
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__cta-button {
+    &-icon {
+      //*** Position ***//
+      margin-left: 0.25rem;
+
+      //*** Appearance ***//
+      font-size: 1.25rem;
+      vertical-align: middle;
+    }
+
+    &--learn-more {
+      //*** Appearance ***//
+      @extend %button;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding-block: 0;
+    }
+
+    &--contact-us {
+      //*** Appearance ***//
+      @extend %button;
+      background-color: var(--brand-green);
+      color: var(--secondary-color);
+      padding-block: 0;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+//************************************************
+// This is the Landing Page of the website.
+//************************************************
+@use "main" as *;
+
+// FIXME: Remove empty space around card images
+
+/*================================================  
+          PRODUCT__CARDS SECTION
+================================================*/
+.card-grid {
+  @extend %grid;
+
+  .card-container {
+    //*** Position ***//
+    position: relative;
+
+    //*** Appearance ***//
+    height: toRem(368);
+
+    //*** Behaviour ***//
+    perspective: toRem(800);
+  }
+}
+
+.card {
+  //*** Position ***//
+  position: absolute;
+
+  //*** Appearance ***//
+  background-color: var(--secondary-color);
+  border: toRem(1) solid var(--card-border-color);
+  border-radius: var(--small-radius);
+  border-top-left-radius: toRem(56);
+  border-bottom-right-radius: toRem(56);
+  height: 100%;
+  width: 100%;
+
+  //*** Behaviour ***//
+  @include select-none;
+  transition: all 0.25s ease-in-out;
+  transform-style: preserve-3d;
+
+  &__front {
+    //*** Behaviour ***//
+    @include card-face;
+  }
+
+  &__back {
+    //*** Behaviour ***//
+    @include card-face;
+    transform: rotateY(180deg);
+
+    .card__title {
+      //*** Position ***//
+      margin-top: 0.25rem;
+    }
+  }
+
+  &__content {
+    //*** Appearance ***//
+    padding: 0.5rem 1rem 0.75rem 1rem;
+  }
+
+  &__image-link {
+    //*** Display ***//
+    display: block;
+
+    //*** Appearance ***//
+    border-top-left-radius: toRem(56);
+    border-top-right-radius: var(--small-radius);
+    object-fit: cover;
+
+    //*** Behaviour ***//
+    overflow: hidden;
+  }
+
+  &__image {
+    //*** Display ***//
+    display: block;
+
+    //*** Appearance ***//
+    object-fit: cover;
+    height: toRem(200);
+    width: 100%;
+
+    //*** Behaviour ***//
+    transition: transform 0.35s ease-in-out;
+  }
+
+  &__title {
+    //*** Position ***//
+    margin-bottom: 0.75rem;
+
+    //*** Appearance ***//
+    font-size: 1.75rem;
+  }
+
+  &__button {
+    //*** Position ***//
+    margin-top: 0.75rem;
+
+    //*** Appearance ***//
+    @extend %button;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  &:hover {
+    //*** Appearance ***//
+    box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
+
+    //*** Behaviour ***//
+    transform: scale(1.05);
+
+    .card__image {
+      //*** Behaviour ***//
+      transform: scale(1.25);
+    }
+  }
+
+  &.flipped {
+    //*** Behaviour ***//
+    transform: rotateY(180deg);
+
+    &:hover {
+      //*** Appearance ***//
+      box-shadow: toRem(-2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
+
+      //*** Behaviour ***//
+      transform: rotateY(180deg) scale(1.05);
+      //-----------------------------------------------------------
+      // The transform above was added because the .flipped class
+      // was overriding the transform scale hover effect causing
+      // it to only work on the unflipped card.
+      //-----------------------------------------------------------
+    }
+  }
+}
