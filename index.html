@@ -46,8 +46,8 @@
     <link rel="stylesheet" href="./dist/css/index.css" />
 
     <!-- CUSTOM JAVASCRIPT -->
-    <script type="module" src="./javascript/firebase.js" defer></script>
-    <script type="module" src="./javascript/main.js" defer></script>
+    <script type="module" src="./javascript/firebase.js"></script>
+    <script type="module" src="./javascript/main.js"></script>
   </head>
 
   <body>
@@ -121,21 +121,18 @@
             Founded by the Carty family, our mission is to provide
             <strong>100% Natural</strong>
             products that promote overall
-            <strong>health and wellness</strong>
-            .
+            <strong>health and wellness.</strong>
           </span>
-          <div class="header__cta-button-container">
-            <a class="header__cta-button--learn-more" href="#about-us-section">
-              Learn More
-            </a>
-            <a
-              class="header__cta-button--contact-us"
-              href="#contact-us-section">
-              Contact Us
-              <i class="header__cta-button-icon fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
         </h1>
+        <div class="header__cta-button-container">
+          <a class="header__cta-button--learn-more" href="#about-us-section">
+            Learn More
+          </a>
+          <a class="header__cta-button--contact-us" href="#contact-us-section">
+            Contact Us
+            <i class="header__cta-button-icon fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
       </section>
     </header>
 
@@ -152,246 +149,265 @@
         <header>
           <h2 id="products-title">Our Products</h2>
         </header>
-
-        <h3>Pure Essential Oils</h3>
-
-        <div class="card-grid">
-          <!-- Card 1 -->
-          <article class="card-container">
-            <div class="card">
-              <div class="card__front">
-                <a
-                  class="card__image-link"
-                  href="./images/product/1oz-castor-coconut-oil.jpg"
-                  target="_blank"
-                  title="Click to view full image">
-                  <img
-                    class="card__image"
-                    src="./images/product/1oz-castor-coconut-oil.jpg"
-                    alt="Castor-Coconut Oil" />
-                </a>
-                <div class="card__content">
-                  <h4 class="card__title">Castor-Coconut Oil</h4>
-                  <p>
-                    This is the
-                    <strong>front</strong>
-                    of the card for the Castor-Coconut Oil.
-                  </p>
-                  <button class="card__button">More Info</button>
-                </div>
-              </div>
-              <div class="card__back">
-                <div class="card__content">
-                  <h4 class="card__title">Back of the Card</h4>
-                  <button class="card__button">Back to Front</button>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="card-container">
-            <div class="card">
-              <div class="card__front">
-                <a
-                  class="card__image-link"
-                  href="./images/product/2oz-coconut-oil.jpg"
-                  target="_blank"
-                  title="Click to view full image">
-                  <img
-                    class="card__image"
-                    src="./images/product/2oz-coconut-oil.jpg"
-                    alt="Coconut Oil" />
-                </a>
-                <div class="card__content">
-                  <h4 class="card__title">Coconut Oil</h4>
-                  <p>
-                    This is the
-                    <strong>front</strong>
-                    of the card for the Coconut Oil.
-                  </p>
-                  <button class="card__button">More Info</button>
-                </div>
-              </div>
-              <div class="card__back">
-                <div class="card__content">
-                  <h4 class="card__title">Back of the Card</h4>
-                  <button class="card__button">Back to Front</button>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="card-container">
-            <div class="card">
-              <div class="card__front">
-                <a
-                  class="card__image-link"
-                  href="./images/product/beard-oil.jpg"
-                  target="_blank"
-                  title="Click to view full image">
-                  <img
-                    class="card__image"
-                    src="./images/product/beard-oil.jpg"
-                    alt="Beard Oil" />
-                </a>
-                <div class="card__content">
-                  <h4 class="card__title">Beard Oil</h4>
-                  <p>
-                    This is the
-                    <strong>front</strong>
-                    of the card for the Beard Oil.
-                  </p>
-                  <button class="card__button">More Info</button>
-                </div>
-              </div>
-              <div class="card__back">
-                <div class="card__content">
-                  <h4 class="card__title">Back of the Card</h4>
-                  <button class="card__button">Back to Front</button>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="card-container">
-            <div class="card">
-              <div class="card__front">
-                <a
-                  class="card__image-link"
-                  href="./images/product/cold-pressed-castor-oil.jpg"
-                  target="_blank"
-                  title="Click to view full image">
-                  <img
-                    class="card__image"
-                    src="./images/product/cold-pressed-castor-oil.jpg"
-                    alt="Cold-Pressed Castor Oil" />
-                </a>
-                <div class="card__content">
-                  <h4 class="card__title">Cold-Pressed Castor Oil</h4>
-                  <p>
-                    This is the
-                    <strong>front</strong>
-                    of the card for the Cold-Pressed Castor Oil.
-                  </p>
-                  <button class="card__button">More Info</button>
-                </div>
-              </div>
-              <div class="card__back">
-                <div class="card__content">
-                  <h4 class="card__title">Back of the Card</h4>
-                  <button class="card__button">Back to Front</button>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <h3>Bar Soaps</h3>
-
-        <div class="card-grid">
-          <!-- Card 1 -->
-          <article class="card-container">
-            <div class="card-container">
+        <div id="essential-oils-section" aria-labelledby="essential-oils-title">
+          <header>
+            <h3 id="essential-oils-title">Pure Essential Oils</h3>
+          </header>
+          <div class="card-grid">
+            <!-- Card 1 -->
+            <article class="card-container">
               <div class="card">
                 <div class="card__front">
                   <a
                     class="card__image-link"
-                    href="./images/product/charcoal-bar-soap.jpg"
+                    href="./images/product/1oz-castor-coconut-oil.jpg"
                     target="_blank"
                     title="Click to view full image">
                     <img
                       class="card__image"
-                      src="./images/product/charcoal-bar-soap.jpg"
-                      alt="Charcoal Bar Soap" />
+                      src="./images/product/1oz-castor-coconut-oil.jpg"
+                      alt="Castor-Coconut Oil" />
                   </a>
                   <div class="card__content">
-                    <h4 class="card__title">Charcoal Bar Soap</h4>
+                    <h4 class="card__title">Castor-Coconut Oil</h4>
                     <p>
                       This is the
                       <strong>front</strong>
-                      of the card for the Charcoal Bar Soap.
+                      of the card for the Castor-Coconut Oil.
                     </p>
                     <button class="card__button">More Info</button>
                   </div>
                 </div>
                 <div class="card__back">
+                  <span class="card__close">x</span>
                   <div class="card__content">
-                    <h4 class="card__title">Back of the Card</h4>
-                    <button class="card__button">Back to Front</button>
+                    <h4 class="card__title">Castor-Coconut Oil</h4>
+                    <span>$50.00 JMD</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptates impedit cum labore voluptatem! Accusantium
+                      reprehenderit minus impedit, eos qui suscipit magni a non
+                      odit placeat praesentium voluptatem expedita officiis
+                      dolor!
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Card 2 -->
-          <article class="card-container">
-            <div class="card">
-              <div class="card__front">
-                <a
-                  class="card__image-link"
-                  href="./images/product/neem-and-mint-bar-soap.jpg"
-                  target="_blank"
-                  title="Click to view full image">
-                  <img
-                    class="card__image"
-                    src="./images/product/neem-and-mint-bar-soap.jpg"
-                    alt="Neem and Mint Bar Soap" />
-                </a>
-                <div class="card__content">
-                  <h4 class="card__title">Neem &amp; Mint Bar Soap</h4>
-                  <p>
-                    This is the
-                    <strong>front</strong>
-                    of the card for the Neem &amp; Mint Bar Soap.
-                  </p>
-                  <button class="card__button">More Info</button>
+            <!-- Card 2 -->
+            <article class="card-container">
+              <div class="card">
+                <div class="card__front">
+                  <a
+                    class="card__image-link"
+                    href="./images/product/2oz-coconut-oil.jpg"
+                    target="_blank"
+                    title="Click to view full image">
+                    <img
+                      class="card__image"
+                      src="./images/product/2oz-coconut-oil.jpg"
+                      alt="Coconut Oil" />
+                  </a>
+                  <div class="card__content">
+                    <h4 class="card__title">Coconut Oil</h4>
+                    <p>
+                      This is the
+                      <strong>front</strong>
+                      of the card for the Coconut Oil.
+                    </p>
+                    <button class="card__button">More Info</button>
+                  </div>
+                </div>
+                <div class="card__back">
+                  <span class="card__close">x</span>
+                  <div class="card__content">
+                    <h4 class="card__title">Coconut Oil</h4>
+                    <span>$50.00 JMD</span>
+                  </div>
                 </div>
               </div>
-              <div class="card__back">
-                <div class="card__content">
-                  <h4 class="card__title">Back of the Card</h4>
-                  <button class="card__button">Back to Front</button>
-                </div>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Card 3 -->
-          <article class="card-container">
-            <div class="card">
-              <div class="card__front">
-                <a
-                  class="card__image-link"
-                  href="./images/product/turmeric-kojic-bar-soap.jpg"
-                  target="_blank"
-                  title="Click to view full image">
-                  <img
-                    class="card__image"
-                    src="./images/product/turmeric-kojic-bar-soap.jpg"
-                    alt="Turmeric-Kojic Bar Soap" />
-                </a>
-                <div class="card__content">
-                  <h4 class="card__title">Turmeric-Kojic Bar Soap</h4>
-                  <p>
-                    This is the
-                    <strong>front</strong>
-                    of the card for the Turmeric-Kojic Bar Soap.
-                  </p>
-                  <button class="card__button">More Info</button>
+            <!-- Card 3 -->
+            <article class="card-container">
+              <div class="card">
+                <div class="card__front">
+                  <a
+                    class="card__image-link"
+                    href="./images/product/beard-oil.jpg"
+                    target="_blank"
+                    title="Click to view full image">
+                    <img
+                      class="card__image"
+                      src="./images/product/beard-oil.jpg"
+                      alt="Beard Oil" />
+                  </a>
+                  <div class="card__content">
+                    <h4 class="card__title">Beard Oil</h4>
+                    <p>
+                      This is the
+                      <strong>front</strong>
+                      of the card for the Beard Oil.
+                    </p>
+                    <button class="card__button">More Info</button>
+                  </div>
+                </div>
+                <div class="card__back">
+                  <span class="card__close">x</span>
+                  <div class="card__content">
+                    <h4 class="card__title">Beard Oil</h4>
+                    <span>$50.00 JMD</span>
+                  </div>
                 </div>
               </div>
-              <div class="card__back">
-                <div class="card__content">
-                  <h4 class="card__title">Back of the Card</h4>
-                  <button class="card__button">Back to Front</button>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card-container">
+              <div class="card">
+                <div class="card__front">
+                  <a
+                    class="card__image-link"
+                    href="./images/product/cold-pressed-castor-oil.jpg"
+                    target="_blank"
+                    title="Click to view full image">
+                    <img
+                      class="card__image"
+                      src="./images/product/cold-pressed-castor-oil.jpg"
+                      alt="Cold-Pressed Castor Oil" />
+                  </a>
+                  <div class="card__content">
+                    <h4 class="card__title">Cold-Pressed Castor Oil</h4>
+                    <p>
+                      This is the
+                      <strong>front</strong>
+                      of the card for the Cold-Pressed Castor Oil.
+                    </p>
+                    <button class="card__button">More Info</button>
+                  </div>
+                </div>
+                <div class="card__back">
+                  <span class="card__close">x</span>
+                  <div class="card__content">
+                    <h4 class="card__title">Cold-Pressed Castor Oil</h4>
+                    <span>$50.00 JMD</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
+        </div>
+
+        <div class="bar-soaps-section" aria-labelledby="bar-soaps-title">
+          <header>
+            <h3 id="bar-soaps-title">Bar Soaps</h3>
+          </header>
+          <div class="card-grid">
+            <!-- Card 1 -->
+            <article class="card-container">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card__front">
+                    <a
+                      class="card__image-link"
+                      href="./images/product/charcoal-bar-soap.jpg"
+                      target="_blank"
+                      title="Click to view full image">
+                      <img
+                        class="card__image"
+                        src="./images/product/charcoal-bar-soap.jpg"
+                        alt="Charcoal Bar Soap" />
+                    </a>
+                    <div class="card__content">
+                      <h4 class="card__title">Charcoal Bar Soap</h4>
+                      <p>
+                        This is the
+                        <strong>front</strong>
+                        of the card for the Charcoal Bar Soap.
+                      </p>
+                      <button class="card__button">More Info</button>
+                    </div>
+                  </div>
+                  <div class="card__back">
+                    <span class="card__close">x</span>
+                    <div class="card__content">
+                      <h4 class="card__title">Charcoal Bar Soap</h4>
+                      <span>$50.00 JMD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card-container">
+              <div class="card">
+                <div class="card__front">
+                  <a
+                    class="card__image-link"
+                    href="./images/product/neem-and-mint-bar-soap.jpg"
+                    target="_blank"
+                    title="Click to view full image">
+                    <img
+                      class="card__image"
+                      src="./images/product/neem-and-mint-bar-soap.jpg"
+                      alt="Neem and Mint Bar Soap" />
+                  </a>
+                  <div class="card__content">
+                    <h4 class="card__title">Neem &amp; Mint Bar Soap</h4>
+                    <p>
+                      This is the
+                      <strong>front</strong>
+                      of the card for the Neem &amp; Mint Bar Soap.
+                    </p>
+                    <button class="card__button">More Info</button>
+                  </div>
+                </div>
+                <div class="card__back">
+                  <span class="card__close">x</span>
+                  <div class="card__content">
+                    <h4 class="card__title">Neem &amp; Mint Bar Soap</h4>
+                    <span>$50.00 JMD</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card-container">
+              <div class="card">
+                <div class="card__front">
+                  <a
+                    class="card__image-link"
+                    href="./images/product/turmeric-kojic-bar-soap.jpg"
+                    target="_blank"
+                    title="Click to view full image">
+                    <img
+                      class="card__image"
+                      src="./images/product/turmeric-kojic-bar-soap.jpg"
+                      alt="Turmeric-Kojic Bar Soap" />
+                  </a>
+                  <div class="card__content">
+                    <h4 class="card__title">Turmeric-Kojic Bar Soap</h4>
+                    <p>
+                      This is the
+                      <strong>front</strong>
+                      of the card for the Turmeric-Kojic Bar Soap.
+                    </p>
+                    <button class="card__button">More Info</button>
+                  </div>
+                </div>
+                <div class="card__back">
+                  <span class="card__close">x</span>
+                  <div class="card__content">
+                    <h4 class="card__title">Turmeric-Kojic Bar Soap</h4>
+                    <span>$50.00 JMD</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 

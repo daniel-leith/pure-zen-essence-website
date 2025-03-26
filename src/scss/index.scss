@@ -53,7 +53,47 @@
 
     .card__title {
       //*** Position ***//
-      margin-top: 0.25rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &__close {
+    //*** Position ***//
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    //*** Display ***//
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    //*** Appearance ***//
+    @include rounded-square(toRem(50));
+    background-color: var(--brand-green);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+
+    //*** Behaviour ***//
+    transition: transform 0.35s, box-shadow 0.35s;
+
+    &:hover {
+      //*** Appearance ***//
+      transform: scale(1.05);
+
+      //*** Behaviour ***//
+      cursor: pointer;
+      box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      //*** Appearance ***//
+      transform: scale(0.9);
+
+      //*** Behaviour ***//
+      transition: transform 0.15s;
     }
   }
 
@@ -104,6 +144,19 @@
     @extend %button;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+
+    //*** Behaviour ***//
+    transition: transform 0.35s;
+
+    &:hover {
+      //*** Appearance ***//
+      transform: scale(1.05);
+    }
+
+    &:active {
+      //*** Appearance ***//
+      transform: scale(0.9);
+    }
   }
 
   &:hover {

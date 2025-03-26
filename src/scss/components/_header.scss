@@ -31,36 +31,31 @@
   }
 
   &__cta-button-container {
+    //*** Position ***//
+    margin-top: 1.75rem;
+
     //*** Display ***//
     display: flex;
     align-items: center;
     gap: 1rem;
   }
 
-  &__cta-button {
-    &-icon {
-      //*** Position ***//
-      margin-left: 0.25rem;
+  &__cta-button-icon {
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
 
-      //*** Appearance ***//
-      font-size: 1.25rem;
-      vertical-align: middle;
-    }
+  &__cta-button--learn-more {
+    //*** Appearance ***//
+    @extend %button;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
 
-    &--learn-more {
-      //*** Appearance ***//
-      @extend %button;
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
-      padding-block: 0;
-    }
-
-    &--contact-us {
-      //*** Appearance ***//
-      @extend %button;
-      background-color: var(--brand-green);
-      color: var(--secondary-color);
-      padding-block: 0;
-    }
+  &__cta-button--contact-us {
+    //*** Appearance ***//
+    @extend %button;
+    background-color: var(--brand-green);
+    color: var(--secondary-color);
   }
 }
