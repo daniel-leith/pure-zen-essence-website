@@ -92,12 +92,18 @@
       //*** Appearance ***//
       padding-right: 1rem;
     }
+
+    &-icon {
+      //*** Behaviour ***//
+      transition: color 0s;
+    }
   }
 
   &__hamburger-menu {
     //*** Appearance ***//
     border: toRem(2) solid var(--secondary-color);
     border-radius: var(--medium-radius);
+    font-weight: bold;
     padding: 0.5rem 1rem;
     text-align: center;
 
@@ -113,6 +119,7 @@
     &-icon {
       //*** Position ***//
       margin-right: 0.25rem;
+      transition: color 0s;
     }
   }
 
@@ -135,7 +142,7 @@
     @extend %button;
     @include rounded-square(2.75rem);
     background-color: var(--brand-green);
-    font-size: 1.25rem;
+    border: toRem(2) solid var(--brand-green);
 
     &-text {
       //*** Display ***//
@@ -162,7 +169,6 @@
 
     &__authenticate-button {
       //*** Appearance ***//
-      border: toRem(2) solid var(--brand-green);
       border-radius: var(--small-radius);
       height: unset;
       padding: 0.5rem 0.75rem;

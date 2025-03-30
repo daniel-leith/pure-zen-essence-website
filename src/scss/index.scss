@@ -1,9 +1,20 @@
 //************************************************
 // This is the Landing Page of the website.
 //************************************************
-@use "main" as *;
+@use "global" as *;
+@use "utils" as *;
+@use "components" as *;
+
+// BUG: The card flip effect stopped working!
 
 // FIXME: Remove empty space around card images
+
+// FIXME: There is a problem where I need a way to
+// determine how much content is in the card.
+// However, the card is positioned absolutely so
+// I have to somehow figure iyt how to do it. I
+// might use JavaScript since CSS is set and
+// unchangeable b y itself.
 
 /*================================================  
           PRODUCT__CARDS SECTION
@@ -24,154 +35,6 @@
 }
 
 .card {
-  //*** Position ***//
-  position: absolute;
-
-  //*** Appearance ***//
-  background-color: var(--secondary-color);
-  border: toRem(1) solid var(--card-border-color);
-  border-radius: var(--small-radius);
-  border-top-left-radius: toRem(56);
-  border-bottom-right-radius: toRem(56);
-  height: 100%;
-  width: 100%;
-
-  //*** Behaviour ***//
-  @include select-none;
-  transition: all 0.25s ease-in-out;
-  transform-style: preserve-3d;
-
-  &__front {
-    //*** Behaviour ***//
-    @include card-face;
-  }
-
-  &__back {
-    //*** Behaviour ***//
-    @include card-face;
-    transform: rotateY(180deg);
-
-    .card__title {
-      //*** Position ***//
-      margin-top: 3rem;
-    }
-  }
-
-  &__close {
-    //*** Position ***//
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    //*** Display ***//
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-
-    //*** Appearance ***//
-    @include rounded-square(toRem(50));
-    background-color: var(--brand-green);
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
-    font-size: 1.25rem;
-
-    //*** Behaviour ***//
-    transition: transform 0.35s, box-shadow 0.35s;
-
-    &:hover {
-      //*** Appearance ***//
-      transform: scale(1.05);
-
-      //*** Behaviour ***//
-      cursor: pointer;
-      box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
-    }
-
-    &:active {
-      //*** Appearance ***//
-      transform: scale(0.9);
-
-      //*** Behaviour ***//
-      transition: transform 0.15s;
-    }
-  }
-
-  &__content {
-    //*** Appearance ***//
-    padding: 0.5rem 1rem 0.75rem 1rem;
-  }
-
-  &__image-link {
-    //*** Display ***//
-    display: block;
-
-    //*** Appearance ***//
-    border-top-left-radius: toRem(56);
-    border-top-right-radius: var(--small-radius);
-    object-fit: cover;
-
-    //*** Behaviour ***//
-    overflow: hidden;
-  }
-
-  &__image {
-    //*** Display ***//
-    display: block;
-
-    //*** Appearance ***//
-    object-fit: cover;
-    height: toRem(200);
-    width: 100%;
-
-    //*** Behaviour ***//
-    transition: transform 0.35s ease-in-out;
-  }
-
-  &__title {
-    //*** Position ***//
-    margin-bottom: 0.75rem;
-
-    //*** Appearance ***//
-    font-size: 1.75rem;
-  }
-
-  &__button {
-    //*** Position ***//
-    margin-top: 0.75rem;
-
-    //*** Appearance ***//
-    @extend %button;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-
-    //*** Behaviour ***//
-    transition: transform 0.35s;
-
-    &:hover {
-      //*** Appearance ***//
-      transform: scale(1.05);
-    }
-
-    &:active {
-      //*** Appearance ***//
-      transform: scale(0.9);
-    }
-  }
-
-  &:hover {
-    //*** Appearance ***//
-    box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
-
-    //*** Behaviour ***//
-    transform: scale(1.05);
-
-    .card__image {
-      //*** Behaviour ***//
-      transform: scale(1.25);
-    }
-  }
-
   &.flipped {
     //*** Behaviour ***//
     transform: rotateY(180deg);
@@ -189,4 +52,156 @@
       //-----------------------------------------------------------
     }
   }
+}
+
+.card:hover {
+  //*** Appearance ***//
+  box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
+
+  //*** Behaviour ***//
+  transform: scale(1.05);
+
+  .card__image {
+    //*** Behaviour ***//
+    transform: scale(1.25);
+  }
+}
+
+.card__front {
+  //*** Behaviour ***//
+  @include card-face;
+}
+
+.card__back {
+  //*** Behaviour ***//
+  @include card-face;
+  transform: rotateY(180deg);
+
+  .card__title {
+    //*** Position ***//
+    margin-top: 3rem;
+  }
+
+  //*** Position ***//
+  position: absolute;
+
+  //*** Appearance ***//
+  background-color: var(--secondary-color);
+  border: toRem(1) solid var(--card-border-color);
+  border-radius: var(--small-radius);
+  border-top-left-radius: toRem(56);
+  border-bottom-right-radius: toRem(56);
+  height: 100%;
+  width: 100%;
+
+  //*** Behaviour ***//
+  @include select-none;
+  transition: all 0.25s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card__close {
+  //*** Position ***//
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  //*** Display ***//
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  //*** Appearance ***//
+  @include rounded-square(toRem(50));
+  background-color: var(--brand-green);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+
+  //*** Behaviour ***//
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.card__close:hover {
+  //*** Appearance ***//
+  transform: scale(1.05);
+
+  //*** Behaviour ***//
+  cursor: pointer;
+  box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
+}
+
+.card__close:active {
+  //*** Appearance ***//
+  transform: scale(0.9);
+
+  //*** Behaviour ***//
+  transition: transform 0.15s;
+}
+
+.card__content {
+  //*** Appearance ***//
+  height: toRem(150);
+  padding: 0.5rem 1rem 0.75rem 1rem;
+
+  //*** Behaviour ***//
+  overflow: hidden;
+}
+
+.card__image-link {
+  //*** Display ***//
+  display: block;
+
+  //*** Appearance ***//
+  border-top-left-radius: toRem(56);
+  border-top-right-radius: var(--small-radius);
+  object-fit: cover;
+
+  //*** Behaviour ***//
+  overflow: hidden;
+}
+
+.card__image {
+  //*** Display ***//
+  display: block;
+
+  //*** Appearance ***//
+  object-fit: cover;
+  height: toRem(200);
+  width: 100%;
+
+  //*** Behaviour ***//
+  transition: transform 0.35s ease-in-out;
+}
+
+.card__title {
+  //*** Position ***//
+  margin-bottom: 0.75rem;
+
+  //*** Appearance ***//
+  font-size: 1.75rem;
+}
+
+.card__button {
+  //*** Position ***//
+  margin-top: 0.75rem;
+
+  //*** Appearance ***//
+  @extend %button;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  //*** Behaviour ***//
+  transition: transform 0.35s;
+}
+
+.card__button:hover {
+  //*** Appearance ***//
+  transform: scale(1.05);
+}
+
+.card__button:active {
+  //*** Appearance ***//
+  transform: scale(0.9);
 }
