@@ -3,7 +3,7 @@
 
 <main>
   <!-- ABOUT US SECTION -->
-  <section id="about-us" aria-labelledby="about-us-title">
+  <section id="about" aria-labelledby="about-us-title">
     <header>
       <h2 id="about-us-title">About Us</h2>
     </header>
@@ -80,7 +80,7 @@
   </section>
 
   <!-- CONTACT US SECTION -->
-  <section id="contact-us" aria-labelledby="contact-us-title">
+  <section id="contact" aria-labelledby="contact-us-title">
     <header>
       <h2 id="contact-us-title">Contact Us</h2>
     </header>

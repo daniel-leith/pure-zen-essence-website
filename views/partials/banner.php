@@ -18,10 +18,10 @@
       </span>
     </h1>
     <div class="header__cta-button-container">
-      <a class="header__cta-button--learn-more" href="#about-us-section">
+      <a class="header__cta-button--learn-more" href="#about">
         Learn More
       </a>
-      <a class="header__cta-button--contact-us" href="#contact-us-section">
+      <a class="header__cta-button--contact-us" href="#contact">
         Contact Us
         <i class="header__cta-button-icon fa-brands fa-whatsapp"></i>
       </a>

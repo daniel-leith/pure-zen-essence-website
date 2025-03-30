@@ -15,7 +15,7 @@
       </a>
     </li>
     <li>
-      <a class="primary-navbar__section-link" href="#about-us">
+      <a class="primary-navbar__section-link" href="#about">
         About Us
       </a>
     </li>
@@ -33,7 +33,7 @@
     </li>
   </ul>
   <div class="primary-navbar__right-container">
-    <a class="contact-us-button" href="#contact-us">
+    <a class="contact-us-button" href="#contact">
       <i class="contact-us-button__icon fa-brands fa-whatsapp"></i>
       Contact Us
     </a>
