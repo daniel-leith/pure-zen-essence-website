@@ -2,7 +2,7 @@
   <a class="primary-navbar__logo-link" href="./" title="Pure Zen Essence">
     <img
       class="primary-navbar__logo"
-      src="assets/images/pure-zen-essence-icon.png"
+      src="dist/assets/images/pure-zen-essence-icon.png"
       alt="Pure Zen Essence Icon" />
     <span class="primary-navbar__logo-text">Pure Zen Essence</span>
   </a>

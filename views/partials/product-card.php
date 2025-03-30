@@ -3,12 +3,12 @@
     <div class="card__front">
       <a
         class="card__image-link"
-        href="assets/images/product/1oz-castor-coconut-oil.jpg"
+        href="dist/assets/images/product/1oz-castor-coconut-oil.jpg"
         target="_blank"
         title="Click to view full image">
         <img
           class="card__image"
-          src="assets/images/product/1oz-castor-coconut-oil.jpg"
+          src="dist/assets/images/product/1oz-castor-coconut-oil.jpg"
           alt="Castor-Coconut Oil" />
       </a>
       <div class="card__content">
