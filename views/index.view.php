@@ -3,7 +3,7 @@
 
 <main>
   <!-- ABOUT US SECTION -->
-  <section id="about-us-section" aria-labelledby="about-us-title">
+  <section id="about-us" aria-labelledby="about-us-title">
     <header>
       <h2 id="about-us-title">About Us</h2>
     </header>
@@ -32,7 +32,7 @@
   </section>
 
   <!-- PRODUCTS SECTION -->
-  <section id="products-section" aria-labelledby="products-title">
+  <section id="products" aria-labelledby="products-title">
     <header>
       <h2 id="products-title">Our Products</h2>
     </header>
@@ -73,14 +73,14 @@
   </section>
 
   <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials-section" aria-labelledby="testimonials-title">
+  <section id="testimonials" aria-labelledby="testimonials-title">
     <header>
       <h2 id="testimonials-title">Testimonials</h2>
     </header>
   </section>
 
   <!-- CONTACT US SECTION -->
-  <section id="contact-us-section" aria-labelledby="contact-us-title">
+  <section id="contact-us" aria-labelledby="contact-us-title">
     <header>
       <h2 id="contact-us-title">Contact Us</h2>
     </header>

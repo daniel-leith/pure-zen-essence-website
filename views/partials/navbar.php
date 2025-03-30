@@ -1,9 +1,9 @@
 <nav class="primary-navbar">
-  <a class="primary-navbar__logo-link" href="./" title="Pure Zen Essence">
+  <a class="primary-navbar__logo-link" href="/" title="Pure Zen Essence">
     <img
       class="primary-navbar__logo"
       src="dist/assets/images/pure-zen-essence-icon.png"
-      alt="Pure Zen Essence Icon" />
+      alt="Pure Zen Essence Icon">
     <span class="primary-navbar__logo-text">Pure Zen Essence</span>
   </a>
   <ul class="primary-navbar__links">
@@ -15,25 +15,25 @@
       </a>
     </li>
     <li>
-      <a class="primary-navbar__section-link" href="#about-us-section">
+      <a class="primary-navbar__section-link" href="#about-us">
         About Us
       </a>
     </li>
     <li>
-      <a class="primary-navbar__section-link" href="#products-section">
+      <a class="primary-navbar__section-link" href="#products">
         Our Products
       </a>
     </li>
     <li>
       <a
         class="primary-navbar__section-link"
-        href="#testimonials-section">
+        href="#testimonials">
         Testimonials
       </a>
     </li>
   </ul>
   <div class="primary-navbar__right-container">
-    <a class="contact-us-button" href="#contact-us-section">
+    <a class="contact-us-button" href="#contact-us">
       <i class="contact-us-button__icon fa-brands fa-whatsapp"></i>
       Contact Us
     </a>
