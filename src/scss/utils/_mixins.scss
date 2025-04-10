@@ -21,10 +21,13 @@
   position: absolute;
 
   //*** Appearance ***//
-  background-color: transparent;
+  border-radius: var(--small-radius);
+  border-top-left-radius: var(--large-card-radius);
+  border-bottom-right-radius: var(--large-card-radius);
   height: 100%;
   width: 100%;
 
   //*** Behaviour ***//
   backface-visibility: hidden;
+  overflow: hidden;
 }

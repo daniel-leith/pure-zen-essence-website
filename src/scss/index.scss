@@ -5,10 +5,6 @@
 @use "utils" as *;
 @use "components" as *;
 
-// BUG: The card flip effect stopped working!
-
-// FIXME: Remove empty space around card images
-
 // FIXME: There is a problem where I need a way to
 // determine how much content is in the card.
 // However, the card is positioned absolutely so
@@ -17,7 +13,7 @@
 // unchangeable b y itself.
 
 /*================================================  
-          PRODUCT__CARDS SECTION
+          PRODUCT-CARDS-SECTION
 ================================================*/
 .card-grid {
   @extend %grid;
@@ -27,181 +23,161 @@
     position: relative;
 
     //*** Appearance ***//
-    height: toRem(368);
+    height: toRem(375);
 
     //*** Behaviour ***//
     perspective: toRem(800);
-  }
-}
-
-.card {
-  &.flipped {
-    //*** Behaviour ***//
-    transform: rotateY(180deg);
+    transition: transform 0.25s ease-in-out;
 
     &:hover {
-      //*** Appearance ***//
-      box-shadow: toRem(-2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
-
       //*** Behaviour ***//
-      transform: rotateY(180deg) scale(1.05);
-      //-----------------------------------------------------------
-      // The transform above was added because the .flipped class
-      // was overriding the transform scale hover effect causing
-      // it to only work on the unflipped card.
-      //-----------------------------------------------------------
+      transform: translateY(-1rem);
     }
   }
 }
 
-.card:hover {
-  //*** Appearance ***//
-  box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
-
-  //*** Behaviour ***//
-  transform: scale(1.05);
-
-  .card__image {
-    //*** Behaviour ***//
-    transform: scale(1.25);
-  }
-}
-
-.card__front {
-  //*** Behaviour ***//
-  @include card-face;
-}
-
-.card__back {
-  //*** Behaviour ***//
-  @include card-face;
-  transform: rotateY(180deg);
-
-  .card__title {
-    //*** Position ***//
-    margin-top: 3rem;
-  }
-
+.card {
   //*** Position ***//
   position: absolute;
 
   //*** Appearance ***//
-  background-color: var(--secondary-color);
-  border: toRem(1) solid var(--card-border-color);
-  border-radius: var(--small-radius);
-  border-top-left-radius: toRem(56);
-  border-bottom-right-radius: toRem(56);
   height: 100%;
   width: 100%;
 
   //*** Behaviour ***//
   @include select-none;
-  transition: all 0.25s ease-in-out;
   transform-style: preserve-3d;
-}
+  transition: transform 0.25s ease-in-out;
 
-.card__close {
-  //*** Position ***//
-  position: absolute;
-  right: 0;
-  top: 0;
+  &:hover {
+    .card__image {
+      //*** Behaviour ***//
+      transform: scale(1.25);
+    }
+  }
 
-  //*** Display ***//
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
+  &.flipped {
+    //*** Behaviour ***//
+    transform: rotateY(180deg);
+  }
 
-  //*** Appearance ***//
-  @include rounded-square(toRem(50));
-  background-color: var(--brand-green);
-  border: 2px solid var(--secondary-color);
-  color: var(--secondary-color);
-  font-size: 1.25rem;
+  &__close-button {
+    //*** Position ***//
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
 
-  //*** Behaviour ***//
-  transition: transform 0.35s, box-shadow 0.35s;
-}
+    //*** Display ***//
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 
-.card__close:hover {
-  //*** Appearance ***//
-  transform: scale(1.05);
+    //*** Appearance ***//
+    @include rounded-square(toRem(40));
+    background-color: var(--brand-green);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 1.25rem;
 
-  //*** Behaviour ***//
-  cursor: pointer;
-  box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
-}
+    //*** Behaviour ***//
+    transition: transform 0.35s, box-shadow 0.35s;
 
-.card__close:active {
-  //*** Appearance ***//
-  transform: scale(0.9);
+    &:hover {
+      //*** Appearance ***//
+      transform: scale(1.15);
 
-  //*** Behaviour ***//
-  transition: transform 0.15s;
-}
+      //*** Behaviour ***//
+      cursor: pointer;
+      box-shadow: toRem(2) toRem(2) toRem(6) rgba(0, 0, 0, 0.25);
+    }
 
-.card__content {
-  //*** Appearance ***//
-  height: toRem(150);
-  padding: 0.5rem 1rem 0.75rem 1rem;
+    &:active {
+      //*** Appearance ***//
+      transform: scale(0.9);
 
-  //*** Behaviour ***//
-  overflow: hidden;
-}
+      //*** Behaviour ***//
+      transition: transform 0.15s;
+    }
+  }
 
-.card__image-link {
-  //*** Display ***//
-  display: block;
+  &__front {
+    //*** Appearance ***//
+    @include card-face;
+    background-color: var(--brand-dark-blue);
+    color: var(--secondary-color);
+    border: toRem(2) solid var(--brand-green);
+  }
 
-  //*** Appearance ***//
-  border-top-left-radius: toRem(56);
-  border-top-right-radius: var(--small-radius);
-  object-fit: cover;
+  &__back {
+    //*** Appearance ***//
+    @include card-face;
+    background-color: var(--secondary-color);
+    border: toRem(2) solid var(--brand-green);
 
-  //*** Behaviour ***//
-  overflow: hidden;
-}
+    //*** Behaviour ***//
+    transform: rotateY(180deg);
 
-.card__image {
-  //*** Display ***//
-  display: block;
+    .card__title {
+      //*** Position ***//
+      margin-top: 3rem;
+    }
+  }
 
-  //*** Appearance ***//
-  object-fit: cover;
-  height: toRem(200);
-  width: 100%;
+  &__content {
+    //*** Appearance ***//
+    padding: 0.75rem 1rem;
+  }
 
-  //*** Behaviour ***//
-  transition: transform 0.35s ease-in-out;
-}
+  &__image-link {
+    //*** Display ***//
+    display: block;
 
-.card__title {
-  //*** Position ***//
-  margin-bottom: 0.75rem;
+    //*** Behaviour ***//
+    overflow: hidden;
+  }
 
-  //*** Appearance ***//
-  font-size: 1.75rem;
-}
+  &__image {
+    //*** Display ***//
+    display: block;
 
-.card__button {
-  //*** Position ***//
-  margin-top: 0.75rem;
+    //*** Appearance ***//
+    object-fit: cover;
+    height: toRem(200);
+    width: 100%;
 
-  //*** Appearance ***//
-  @extend %button;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+    //*** Behaviour ***//
+    transition: transform 0.35s ease-in-out;
+  }
 
-  //*** Behaviour ***//
-  transition: transform 0.35s;
-}
+  &__title {
+    //*** Position ***//
+    margin-bottom: 0.75rem;
 
-.card__button:hover {
-  //*** Appearance ***//
-  transform: scale(1.05);
-}
+    //*** Appearance ***//
+    font-size: 1.75rem;
+  }
 
-.card__button:active {
-  //*** Appearance ***//
-  transform: scale(0.9);
+  &__more-info-button {
+    //*** Position ***//
+    margin-top: 0.75rem;
+
+    //*** Appearance ***//
+    @extend %button;
+    background-color: var(--brand-green);
+    color: var(--secondary-color);
+
+    //*** Behaviour ***//
+    transition: transform 0.35s;
+
+    &:hover {
+      //*** Appearance ***//
+      transform: scale(1.05);
+    }
+
+    &:active {
+      //*** Appearance ***//
+      transform: scale(0.9);
+    }
+  }
 }

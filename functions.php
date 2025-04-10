@@ -10,7 +10,6 @@ function dd($value)
 }
 
 function urlIs($url)
-// Returns true if the current URL matches the provided URL
 {
-  return $_SERVER['REQUEST_URI'] === $url;
+  return $_SERVER["REQUEST_URI"] === $url;
 }
