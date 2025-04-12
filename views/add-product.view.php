@@ -1,4 +1,4 @@
-<?php require "partials/head.php"; ?>
+<?php require("partials/head.php") ?>
 
 <main>
   <p>
@@ -8,4 +8,4 @@
   <a href="./index.html">Back to Home</a>
 </main>
 
-<?php require "partials/foot.php"; ?>
+<?php require("partials/foot.php") ?>

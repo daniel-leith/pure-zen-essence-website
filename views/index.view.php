@@ -1,5 +1,5 @@
-<?php require "partials/head.php"; ?>
-<?php require "partials/banner.php"; ?>
+<?php require("partials/head.php") ?>
+<?php require("partials/banner.php") ?>
 
 <main>
   <!-- ABOUT US SECTION -->
@@ -36,40 +36,9 @@
     <header>
       <h2 id="products-title">Our Products</h2>
     </header>
-    <div id="essential-oils-section" aria-labelledby="essential-oils-title">
-      <header>
-        <h3 id="essential-oils-title">Pure Essential Oils</h3>
-      </header>
-      <div class="card-grid">
-        <!-- Card 1 -->
-        <?php require "partials/product-card.php"; ?>
-
-        <!-- Card 2 -->
-        <?php require "partials/product-card.php"; ?>
-
-        <!-- Card 3 -->
-        <?php require "partials/product-card.php"; ?>
-
-        <!-- Card 4 -->
-        <?php require "partials/product-card.php"; ?>
-      </div>
-    </div>
-
-    <div class="bar-soaps-section" aria-labelledby="bar-soaps-title">
-      <header>
-        <h3 id="bar-soaps-title">Bar Soaps</h3>
-      </header>
-      <div class="card-grid">
-        <!-- Card 1 -->
-        <?php require "partials/product-card.php"; ?>
-
-        <!-- Card 2 -->
-        <?php require "partials/product-card.php"; ?>
-
-        <!-- Card 3 -->
-        <?php require "partials/product-card.php"; ?>
-      </div>
-    </div>
+    <?php foreach ($products as $product) : ?>
+      <li>Hello, I'm a product!</li>
+    <?php endforeach; ?>
   </section>
 
   <!-- TESTIMONIALS SECTION -->
@@ -103,4 +72,4 @@
   </ul>
 </footer>
 
-<?php require "partials/foot.php"; ?>
+<?php require("partials/foot.php") ?>

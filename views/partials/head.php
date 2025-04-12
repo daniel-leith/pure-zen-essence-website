@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en-JM">
 
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Daniel Leith">
-  <meta
-    name="description"
-    content="Pure Zen Essence is a family-owned natural products business proudly rooted in the heart of Wakefield Savannah, St. Catherine, Jamaica.">
+  <meta name="description" content="<?= $pageDescription ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pure Zen Essence | Beauty By Nature</title>
+  <title>
+    <?= $pageTitle ?>
+  </title>
 
   <!-- FAVICON -->
   <link
@@ -46,7 +47,6 @@
   <link rel="stylesheet" href="dist/css/index.css">
 
   <!-- CUSTOM JAVASCRIPT -->
-  <script type="module" src="dist/javascript/firebase.js"></script>
   <script type="module" src="dist/javascript/main.js"></script>
 </head>
 

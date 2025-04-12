@@ -12,7 +12,7 @@
           alt="Product Title" />
       </a>
       <div class="card__content">
-        <h4 class="card__title">Product Title</h4>
+        <h4 class="card__title"><?= $product["title"] ?></h4>
         <p>
           This is the
           <strong>front</strong>

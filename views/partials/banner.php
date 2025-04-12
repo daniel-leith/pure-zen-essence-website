@@ -1,6 +1,6 @@
 <header class="header">
 
-  <?php require "navbar.php"; ?>
+  <?php require("navbar.php"); ?>
 
   <section>
     <h1 class="header__cta-text">
