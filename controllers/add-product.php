@@ -1,3 +1,3 @@
 <?php
 
-require("views/add-product.view.php");
+require "views/add-product.view.php";
