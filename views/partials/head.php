@@ -43,6 +43,9 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
 
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="dist/css/index.css">
 
